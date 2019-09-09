@@ -10,18 +10,17 @@ public class Optim {
     private final double b;
     private final double epsilon;
 
-    Optim(double a, double b, double epsilon) {
+    Optim(double a, double b, double epsilon)
+    {
         this.a = a;
         this.b = b;
         this.epsilon = epsilon;
     }
 
-    private double Function(double z) {
-        return Math.pow(z, 4.0D) + Math.pow(z, 2.0D) + z + 1.0D;
-    }
+    private double Function(double z) { return Math.pow(z, 2)+2*z-2*Math.cos(z);}
 
     private double DerivativeFunction(double z) {
-        return 4.0D * Math.pow(z, 3.0D) + 2.0D * z + 1.0D;
+        return 2*(Math.cos(z)+1);
     }
 
     public void GetDihord() {
@@ -49,7 +48,6 @@ public class Optim {
         double prevxn;
         do {
             prevxn = xn;
-            System.out.println(xn);
             xn = this.b - (this.b - xn) * fb / (fb - fxn);
             fxn = this.Function(xn);
             System.out.println(xn);

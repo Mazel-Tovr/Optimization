@@ -24,11 +24,12 @@ public class Main {
         fin2.find();
         System.out.println("\nФункция x/(x^2+1):");
         System.out.println("---");
-        //FindDot fin3 = new FindDotF3(0.00001,0.5);
-        //fin3.find(); 
+        FindDot fin3 = new FindDotF3(0.00001,0.5);
+        fin3.find();
     }
     public static void main(String[] args) {
         //lab1();
         lab2();
     }
 }
+ 

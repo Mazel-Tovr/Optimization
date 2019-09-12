@@ -3,7 +3,7 @@ package com.optimization;
 public class Main {
 
     static void lab1() {
-        Optim op = new Optim(-0.5,1,0.0001);
+        Optim op = new Optim(-0.5,1,Math.pow(10,-7));
         System.out.println("Метод дихотомии:");
         op.getDihord();
         System.out.println("Метод хорд:");
@@ -28,8 +28,8 @@ public class Main {
         fin3.find();
     }
     public static void main(String[] args) {
-        //lab1();
-        lab2();
+        lab1();
+       // lab2();
     }
 }
  

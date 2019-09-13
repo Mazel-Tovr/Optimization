@@ -13,7 +13,7 @@ public class Main {
     }
     static void lab2() {
         System.out.println("Программа поиска точек перегиба функций:");
-
+        
         System.out.println("\nФункция 1/2x^2 - sin(x):");
         System.out.println("---");
         FindDot fin = new FindDot(0.00001,0.5);

@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be9f3879-59b4-4202-9331-4ddb0d70fa37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Form.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/FormConfig.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice_2/Cone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/com/optimization/FindDot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/com/optimization/FindDot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/optimization/FindDot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/optimization/FindDot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/com/optimization/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/com/optimization/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/optimization/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/optimization/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +31,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Optimization_Labs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RunDashboard">
@@ -49,7 +46,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Form">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Form" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Form" />
       <module name="OptimizationMethods" />
@@ -75,8 +72,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Form" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Form" />
       </list>
     </recent_temporary>
   </component>

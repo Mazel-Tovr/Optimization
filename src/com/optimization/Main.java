@@ -1,4 +1,5 @@
 package com.optimization;
+import practice_2.*;
 
 public class Main {
 
@@ -27,8 +28,19 @@ public class Main {
         FindDot fin3 = new FindDotF3(0.00001,0.5);
         fin3.find();
     }
+    static void prctice2()
+    {
+        Cone con = new Cone();
+        System.out.println("Optimum");
+        con.Optimum();
+        System.out.println("NOptimum");
+        con.NOptimum();
+    }
     public static void main(String[] args) {
-        lab1();
-       // lab2();
+        // lab1();
+        // lab2();
+         prctice2();
+
+
     }
 }

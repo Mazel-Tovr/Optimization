@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Cone
 {
-    public void Optimum()
+    public 5
     {
         Scanner scanner = new Scanner(System.in);
         //конус
@@ -45,8 +45,6 @@ public class Cone
         System.out.println("Объем конуса - " + OK);
         double N = OS / OK;
         System.out.println("Соотношение объемов - " + N);
-
-
 
     }
 }

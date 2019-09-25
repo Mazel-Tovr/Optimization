@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Cone
 {
-    public 5
+    public void Optimum()
     {
         Scanner scanner = new Scanner(System.in);
         //конус

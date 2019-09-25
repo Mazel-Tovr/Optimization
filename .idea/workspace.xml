@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be9f3879-59b4-4202-9331-4ddb0d70fa37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/practice_2/Cone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/com/optimization/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/com/optimization/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/optimization/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/optimization/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practice_2/Cone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice_2/Cone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Отчеты/Практическая работа 2/Шаблон.docx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,5 +104,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/practice_2/Cone.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

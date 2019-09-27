@@ -1,4 +1,4 @@
-package com.optimization;
+package practice_1;
 
 // Лабораторная работа №1
 // Программа поиска точек перегиба функций
@@ -10,13 +10,13 @@ public class FindDot
     protected double F,D,FF;
     public String answer;
 
-    FindDot(double epsilon,double Z)
+    public FindDot(double epsilon,double Z)
     {
         this.epsilon = epsilon;
         this.Z = Z;
     }
 
-    void find()
+    public void find()
     {
         System.out.println("Последовательность апроксимации");
         do {

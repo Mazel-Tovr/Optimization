@@ -1,4 +1,4 @@
-package com.optimization;
+package practice_1;
 
 public class Rectangle {
     

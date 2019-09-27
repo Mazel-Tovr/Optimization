@@ -1,5 +1,6 @@
-package com.optimization;
+import practice_1.*;
 import practice_2.*;
+import lab_2.*;
 
 public class Main {
 

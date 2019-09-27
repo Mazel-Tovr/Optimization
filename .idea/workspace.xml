@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be9f3879-59b4-4202-9331-4ddb0d70fa37" name="Default Changelist" comment="" />
+    <list default="true" id="be9f3879-59b4-4202-9331-4ddb0d70fa37" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lab_2/Task1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/com/optimization/FindDot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/com/optimization/FindDotF2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/com/optimization/FindDotF3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/com/optimization/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/com/optimization/Optim.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/com/optimization/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/optimization/FindDot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice_1/FindDot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/optimization/FindDotF2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice_1/FindDotF2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/optimization/FindDotF3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice_1/FindDotF3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/optimization/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/optimization/Optim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice_1/Optim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/optimization/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice_1/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Отчеты/Лабораторная работа 1/Завгороднев.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Отчеты/Лабораторная работа 1/Завгороднев.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Отчеты/Лабораторная работа 1/Иванов.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Отчеты/Лабораторная работа 1/Иванов.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Отчеты/Лабораторная работа 1/Середавкин.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Отчеты/Лабораторная работа 1/Середавкин.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Отчеты/Практическая работа 2/Завгороднев.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Отчеты/Практическая работа 2/Завгороднев.docx" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FTP-Client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RunDashboard">
@@ -44,8 +63,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Form" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Form" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Form" />
       <module name="OptimizationMethods" />
       <extension name="coverage">
@@ -58,7 +77,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="OptimizationMethods" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.optimization.Main" />
       <module name="OptimizationMethods" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -70,8 +96,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Form" />
+        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -100,16 +125,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/practice_2/Cone.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

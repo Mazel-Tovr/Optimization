@@ -1,4 +1,4 @@
-package com.optimization;
+package practice_1;
 
 //  Программа поиска точек перегиба функций (Упражнение 2)
 public class FindDotF3 extends FindDot {

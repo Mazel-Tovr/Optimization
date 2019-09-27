@@ -1,4 +1,4 @@
-package com.optimization;
+package practice_1;
 
 // Практическая работа № 1
 // Методы дихотомии, хорд, касательных
@@ -8,7 +8,7 @@ public class Optim {
     private final double epsilon;
     private int a1=0,b1=0,c1=0;
 
-    Optim(double a, double b, double epsilon)
+    public Optim(double a, double b, double epsilon)
     {
         this.a = a;
         this.b = b;
@@ -48,7 +48,6 @@ public class Optim {
             prevxn = xn;
             xn = this.b - (this.b - xn) * fb / (fb - fxn);
             fxn = this.function(xn);
-            //System.out.println(xn);
             b1++;
         } while(Math.abs(xn - prevxn) > this.epsilon);
         System.out.println(b1);

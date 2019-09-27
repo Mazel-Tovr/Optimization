@@ -8,7 +8,6 @@ public class FindDot
     private double Z;
     protected double X;
     protected double F,D,FF;
-    public String answer;
 
     public FindDot(double epsilon,double Z)
     {

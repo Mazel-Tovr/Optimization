@@ -38,13 +38,13 @@ public class FindDot
     protected void firstDerivative()
     {
         //F = -((2*Math.pow(X,2))/(Math.pow(X,2)+1))+(1/(Math.pow(X,2)+1));
-        //F = X*(2*X-2)+(X-1);
+        //F = F = X * (2*X-2)+Math.pow((X-1),2);
         F = X - Math.cos(X);
     }
     protected void secondDerivative()
     {
         //D =2*X*( (4*Math.pow(X,2)-3)/ ( Math.pow(1 + Math.pow(X,2),2)) );
-        //D = 2*(3*X-2);
+        //D = 6 * X-4;
         D = 1 + Math.sin(X);
     }
     protected void function()

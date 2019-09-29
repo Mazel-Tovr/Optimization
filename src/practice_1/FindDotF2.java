@@ -8,12 +8,12 @@ public class FindDotF2 extends FindDot {
 
     @Override
     protected void firstDerivative() {
-        F = X * (2*X-2)+(X-1);
+        F = X * (2*X-2)+Math.pow((X-1),2);
     }
 
     @Override
     protected void secondDerivative() {
-        D = 2*(3*X-2);
+        D = 6 * X-4;
     }
 
     @Override

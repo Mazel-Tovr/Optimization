@@ -8,12 +8,12 @@ public class FindDotF3 extends FindDot {
 
     @Override
     protected void firstDerivative() {
-        F = -((2*Math.pow(X,2))/(Math.pow(X,2)+1))+(1/(Math.pow(X,2)+1));
+        F = -2 * Math.pow(X, 2) / Math.pow(Math.pow(X, 2) + 1,2) + 1/(Math.pow(X, 2)+1);
     }
 
     @Override
     protected void secondDerivative() {
-        D =2 * X *((((4*Math.pow(X,2))/(1 + Math.pow(X,2)))-3)/ ( Math.pow(1 + Math.pow(X,2),2)) );
+        D =8 * Math.pow(X, 3) / Math.pow(Math.pow(X, 2) + 1, 3)-6*X/Math.pow(Math.pow(X, 2)+1,2);
     }
 
     @Override

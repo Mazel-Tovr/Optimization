@@ -19,15 +19,21 @@ public class Main {
         System.out.println("\nФункция 1/2x^2 - sin(x):");
         System.out.println("---");
         FindDot fin = new FindDot(0.00001,0.5);
-        fin.find();
+        //fin.find();
         System.out.println("\nФункция x*(x-1)^2:");
         System.out.println("---");
         FindDot fin2 = new FindDotF2(0.00001,0.5);
         fin2.find();
+        System.out.println("---");
+        FindDot fin22 = new FindDotF2(0.00001,1);
+        fin22.find();
         System.out.println("\nФункция x/(x^2+1):");
         System.out.println("---");
-        FindDot fin3 = new FindDotF3(0.00001,0.5);
-        fin3.find();
+        FindDot fin3 = new FindDotF3(0.00001,-1.4);
+       // fin3.find();
+        System.out.println("---");
+        FindDot fin33 = new FindDotF3(0.00001,0.8);
+        //fin33.find();
     }
     static void prctice2()
     {
@@ -39,8 +45,8 @@ public class Main {
     }
     public static void main(String[] args) {
         // lab1();
-        // lab2();
-         prctice2();
+        lab2();
+        // prctice2();
 
 
     }

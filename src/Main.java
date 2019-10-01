@@ -30,10 +30,10 @@ public class Main {
         System.out.println("\nФункция x/(x^2+1):");
         System.out.println("---");
         FindDot fin3 = new FindDotF3(0.00001,-1.4);
-       // fin3.find();
+        fin3.find();
         System.out.println("---");
         FindDot fin33 = new FindDotF3(0.00001,0.8);
-        //fin33.find();
+        fin33.find();
     }
     static void prctice2()
     {

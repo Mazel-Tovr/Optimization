@@ -3,19 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="be9f3879-59b4-4202-9331-4ddb0d70fa37" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/practice_1/FindDot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/practice_1/FindDot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/practice_1/FindDotF2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/practice_1/FindDotF2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/practice_1/FindDotF3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/practice_1/FindDotF3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_2/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_2/Task1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice_1/FindDot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice_1/FindDot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice_1/FindDotF2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice_1/FindDotF2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice_1/FindDotF3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice_1/FindDotF3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Отчеты/Лабораторная работа 1/~$вгороднев.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Отчеты/Лабораторная работа 1/Завгороднев.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Отчеты/Лабораторная работа 1/Завгороднев.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Отчеты/Лабораторная работа 1/Иванов.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Отчеты/Лабораторная работа 1/Иванов.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Отчеты/Лабораторная работа 1/Середавкин.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Отчеты/Лабораторная работа 1/Середавкин.docx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

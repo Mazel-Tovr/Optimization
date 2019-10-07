@@ -1,3 +1,6 @@
+import lab_1.FindDot;
+import lab_1.FindDotF2;
+import lab_1.FindDotF3;
 import practice_1.*;
 import practice_2.*;
 import lab_2.*;
@@ -13,7 +16,7 @@ public class Main {
         System.out.println("Метод касательных:");
         op.getKasatelbnblx();
     }
-    static void lab2() {
+    static void practice1() {
         System.out.println("Программа поиска точек перегиба функций:");
         
         System.out.println("\nФункция 1/2x^2 - sin(x):");
@@ -35,7 +38,7 @@ public class Main {
         FindDot fin33 = new FindDotF3(0.00001,0.8);
         fin33.find();
     }
-    static void prctice2()
+    static void pratice2()
     {
         Cone con = new Cone();
         System.out.println("Optimum");
@@ -43,11 +46,15 @@ public class Main {
         System.out.println("NOptimum");
         con.NOptimum();
     }
+    static void lab2() {
+        Task3.isMinInCurrentPoint(0);
+        Task3.isChangeSign(0);
+    }
     public static void main(String[] args) {
         // lab1();
-        lab2();
-        // prctice2();
-
+        // practice1();
+         pratice2();
+        //lab2();
 
     }
 }

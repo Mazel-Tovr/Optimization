@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be9f3879-59b4-4202-9331-4ddb0d70fa37" name="Default Changelist" comment="" />
+    <list default="true" id="be9f3879-59b4-4202-9331-4ddb0d70fa37" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab_2/Task3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab_2/Task3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/practice_1/FindDot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/practice_1/FindDotF2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/practice_1/FindDotF3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/practice_1/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practice_1/FindDot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_1/FindDot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practice_1/FindDotF2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_1/FindDotF2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practice_1/FindDotF3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_1/FindDotF3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practice_1/Rectangle.java" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +42,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RunDashboard">

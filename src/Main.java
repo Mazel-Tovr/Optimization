@@ -1,3 +1,6 @@
+import lab_1.FindDot;
+import lab_1.FindDotF2;
+import lab_1.FindDotF3;
 import practice_1.*;
 import practice_2.*;
 import lab_2.*;
@@ -50,8 +53,8 @@ public class Main {
     public static void main(String[] args) {
         // lab1();
         // practice1();
-        // prctice2();
-        lab2();
+         pratice2();
+        //lab2();
 
     }
 }

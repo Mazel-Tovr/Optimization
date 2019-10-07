@@ -1,4 +1,6 @@
-package practice_1;
+package lab_1;
+
+import lab_1.FindDot;
 
 //  Программа поиска точек перегиба функций (Упражнение 2)
 public class FindDotF3 extends FindDot {

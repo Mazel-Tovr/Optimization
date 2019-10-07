@@ -1,12 +1,15 @@
-package practice_1;
+package lab_1;
 
 // Лабораторная работа №1
 // Программа поиска точек перегиба функций
 public class FindDot
 {
     private double epsilon;
+    //Приближение
     private double Z;
+    //Предыдущий ответ Хn
     protected double X;
+    //FF - функция ,F-первая производная,D - вторая
     protected double F,D,FF;
 
     public FindDot(double epsilon,double Z)

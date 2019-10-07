@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be9f3879-59b4-4202-9331-4ddb0d70fa37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lab_2/Task3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_2/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_2/Task4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab_2/Task1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab_2/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_2/Task3.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +35,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FTP-Client" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RunDashboard">
@@ -110,5 +112,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/lab_2/Task3.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

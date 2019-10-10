@@ -3,9 +3,7 @@ package lab_2;
 public class Task4 extends lab_1.FindDot
 {
     //Done
-    public Task4() {
-        super(0.0001d, 1);
-    }
+    public Task4() { super(0.0001d, 1); }
 
     @Override
     protected void firstDerivative()

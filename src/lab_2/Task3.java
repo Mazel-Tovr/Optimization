@@ -2,6 +2,7 @@ package lab_2;
 
 import org.w3c.dom.ls.LSOutput;
 
+
 public class Task3
 {
  /*
@@ -29,12 +30,14 @@ public class Task3
             }
      System.out.println("Значение f'(x) при x= "+x +" Равно: "+a);
  }
+ /*
  public static void isChangeSign(final double x)
  {
      double prev = x - 1d;
      double next = x + 1d;
      var a = firstDerivative(prev);
      var v = firstDerivative(next);
+
      if(firstDerivative(prev) < x && firstDerivative(next) > x)
      {
          System.out.println("Функция в точке: "+ x +" меняет свой знак");
@@ -44,6 +47,8 @@ public class Task3
          System.out.println("Знак не меняется");
      }
  }
+
+  */
 
     private static double secondDerivative(double x)
     {

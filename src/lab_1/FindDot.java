@@ -20,13 +20,13 @@ public class FindDot
 
     public void find()
     {
-        System.out.println("Последовательность апроксимации");
+        //System.out.println("Последовательность апроксимации");
         do {
             X = Z;
             firstDerivative();
             secondDerivative();
             Z = X - F / D;
-            System.out.println(X +" "+ Z);
+          //  System.out.println(X +" "+ Z);
         }
         while (Math.abs(Z-X)>epsilon);
         X = Z;

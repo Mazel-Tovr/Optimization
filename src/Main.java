@@ -47,14 +47,20 @@ public class Main {
         con.NOptimum();
     }
     static void lab2() {
+        System.out.println("---------------------\n"+"Task 3\n"+"------------------------");
         Task3.isMinInCurrentPoint(0);
         Task3.isChangeSign(0);
+        System.out.println("---------------------\n"+"Task 4\n"+"------------------------");
+        lab_2.Task4 task4 = new lab_2.Task4();
+        task4.find();
+
     }
     public static void main(String[] args) {
         // lab1();
         // practice1();
-         pratice2();
-        //lab2();
+        // pratice2();
+           lab2();
+
 
     }
 }

@@ -33,8 +33,8 @@ public class Task3
  {
      double prev = x - 1d;
      double next = x + 1d;
-     var a =firstDerivative(prev);
-     var v =        firstDerivative(next);
+     var a = firstDerivative(prev);
+     var v = firstDerivative(next);
      if(firstDerivative(prev) < x && firstDerivative(next) > x)
      {
          System.out.println("Функция в точке: "+ x +" меняет свой знак");

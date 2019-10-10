@@ -4,16 +4,13 @@
     <list default="true" id="be9f3879-59b4-4202-9331-4ddb0d70fa37" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab_1/FindDot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab_1/FindDot.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab_2/Task3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab_2/Task3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/practice_1/FindDot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/practice_1/FindDotF2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/practice_1/FindDotF3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/practice_1/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab_2/Task4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab_2/Task4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice_1/FindDot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_1/FindDot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice_1/FindDotF2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_1/FindDotF2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice_1/FindDotF3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_1/FindDotF3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice_1/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab_1/FindDot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_1/FindDot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab_2/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_2/Task3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab_2/Task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_2/Task4.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Task5">
     <configuration name="Form" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Form" />
       <module name="OptimizationMethods" />
@@ -88,8 +85,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab_2.Task5" />
+      <module name="OptimizationMethods" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task5" />
         <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
@@ -119,5 +130,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Optimization$Main__1_.ic" NAME="Main (1) Coverage Results" MODIFIED="1570696858862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

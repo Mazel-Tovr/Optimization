@@ -1,10 +1,27 @@
 package lab_2;
 
-public class Task4
+public class Task4 extends lab_1.FindDot
 {
-    /*
-    to hard 4 me ((
-    exp^(-x)*sinh(x/2) - (exp^(-x)*cosh(x/2))/2= 0
-     */
+    //Done
+    public Task4() {
+        super(0.0001d, 1);
+    }
+
+    @Override
+    protected void firstDerivative()
+    {
+        F = Math.exp(-X) * Math.sinh(X/2d)-((Math.exp(-X)*Math.cosh(X/2))/2d);
+    }
+
+    @Override
+    protected void secondDerivative()
+    {
+        D = (((-5*Math.sinh(X/2d))/4) + Math.cosh(X/2d)) * Math.exp(-X);
+    }
+
+    @Override
+    protected void function() {
+        FF = -Math.exp(-X)*Math.sinh(X/2d);
+    }
 
 }

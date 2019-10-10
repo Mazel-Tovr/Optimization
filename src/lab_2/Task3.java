@@ -12,7 +12,7 @@ public class Task3
 
 смерть
   */
- public static void isMinInCurrentPoint(double x)
+ public static void isMinInCurrentPoint(final double x)
  {
      var a = firstDerivative(x);
             if( a == 0d || Double.isInfinite(a) ||Double.isNaN(a))
@@ -27,12 +27,15 @@ public class Task3
             else {
                 System.out.println("Точка " +x+" не является экстремумом");
             }
+     System.out.println("Значение f'(x) при x= "+x +" Равно: "+a);
  }
- public static void isChangeSign(double x)
+ public static void isChangeSign(final double x)
  {
      double prev = x - 1d;
      double next = x + 1d;
-     if(firstDerivative(prev) < 0 && firstDerivative(next) > 0)
+     var a = firstDerivative(prev);
+     var v = firstDerivative(next);
+     if(firstDerivative(prev) < x && firstDerivative(next) > x)
      {
          System.out.println("Функция в точке: "+ x +" меняет свой знак");
      }

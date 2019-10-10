@@ -12,7 +12,7 @@ public class Task5 {
     }
 
     private static void examineRange(int left, int right) {
-        int randomX = ThreadLocalRandom.current().nextInt(left, right + 1);//Берем рандомное значение в приделах данной границы
+        int randomX = ThreadLocalRandom.current().nextInt(left, right + 1);//Берем рандомное значение в пределах данной границы
 
         if (secondDerivative(randomX) > 0) {
             System.out.println("Функция вогнута");
@@ -24,17 +24,15 @@ public class Task5 {
     public static void main(String[] args) {
         System.out.println("Исследование точек перегиба");
         System.out.println("Функция f(x)=x4−14x3+60x2−70x:");
-        System.out.println("Вычисляем f''(x)=0, точки перегиба:");
-        //Интервал
+        //Интервал, корни уравнения f''(x) = 0
         int x1 = 2;
         int x2 = 5;
-        System.out.println("x1=" + x1 + " x2=" + x2);
 
-        System.out.println("В интервале от -Infinity : 2");
+        System.out.println("В интервале от -Infinity : "+x1);
         examineRange(Integer.MIN_VALUE, 2);
-        System.out.println("В интервале от 2 : 5");
+        System.out.println("В интервале от "+x1+" до "+x2);
         examineRange(2, 5);
-        System.out.println("В интервале от 5 : +Infinity");
+        System.out.println("В интервале от "+x2+" : +Infinity");
         examineRange(5, Integer.MAX_VALUE - 1);
 
     }

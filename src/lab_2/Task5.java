@@ -21,7 +21,7 @@ public class Task5 {
         }
     }
 
-    public static void main(String[] args) {
+    public void getInfo() {
         System.out.println("Исследование точек перегиба");
         System.out.println("Функция f(x)=x4−14x3+60x2−70x:");
         //Интервал, корни уравнения f''(x) = 0

@@ -49,10 +49,17 @@ public class Main {
     static void lab2() {
         System.out.println("---------------------\n"+"Task 3\n"+"------------------------");
         Task3.isMinInCurrentPoint(0);
-        //Task3.isChangeSign(0);
         System.out.println("---------------------\n"+"Task 4\n"+"------------------------");
         lab_2.Task4 task4 = new lab_2.Task4();
         task4.find();
+        System.out.println("---------------------\n"+"Task 5\n"+"------------------------");
+        Task5 task5 =new Task5();
+        task5.getInfo();
+        System.out.println("---------------------\n"+"Task 6\n"+"------------------------");
+        Point M = new Point(0,0);
+        Task6 task6 = new Task6(4d,2d,10d,M);
+        task6.getConclusionAboutThePresenceOfExtremes();
+
 
     }
     public static void main(String[] args) {

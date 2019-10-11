@@ -8,21 +8,21 @@ public class Task6
     private double B;
     private double C;
     private Point point;
-    HashMap<String,Double> firstDerivative= new HashMap<>();
+    HashMap<String,Double> firstDerivative = new HashMap<>();
 
     public Task6(Double dxdy,Double dxx,Double dyy,Point point)
     {
             firstDerivative.put("dxdy",dxdy);
             firstDerivative.put("dxx",dxx);
             firstDerivative.put("dyy",dyy);
-            this.point =point;
+            this.point = point;
             getABC();
     }
     private void getABC()
     {
-        B = firstDerivative.get("dxdy").doubleValue();
-        A = firstDerivative.get("dxx").doubleValue();
-        C = firstDerivative.get("dyy").doubleValue();
+        B = firstDerivative.get("dxdy");
+        A = firstDerivative.get("dxx");
+        C = firstDerivative.get("dyy");
     }
 
     public void getConclusionAboutThePresenceOfExtremes()

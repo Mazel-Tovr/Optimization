@@ -59,6 +59,9 @@ public class Main {
         Point M = new Point(0,0);
         Task6 task6 = new Task6(4d,2d,10d,M);
         task6.getConclusionAboutThePresenceOfExtremes();
+        System.out.println("---------------------\n"+"Task 7\n"+"------------------------");
+        Task7 task7 = new Task7();
+        task7.getConclusionAboutThePresenceOfExtremes();
 
 
     }

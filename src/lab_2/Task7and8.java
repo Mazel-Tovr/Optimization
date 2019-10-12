@@ -1,16 +1,16 @@
 package lab_2;
 
-public class Task7
+public class Task7and8
 {
     private int D1;
     private int D2;
     private int D3;
 
-    private int [][] hessMatrix = {
-            {-2,2,0},
-            {2,-12,20},
-            {0,20,-46}
-    };
+    public Task7and8(int[][] hessMatrix) {
+        this.hessMatrix = hessMatrix;
+    }
+
+    private int [][] hessMatrix;
 
     private void calculateDiagonalMinors() {
         D1 = hessMatrix[0][0];
@@ -28,6 +28,8 @@ public class Task7
         // has different signs
         if ((D1<0 && D2>0 && D3<0)||(D1>0 && D2>0 && D3<0)||(D1<0 && D2>0 && D3>0)||(D1<0 && D2<0 && D3>0))
             System.out.println("Поскольку диагональные миноры имеют различные знаки, то о выпуклости или вогнутости функции ничего сказать нельзя.");
+        if ((D1>0 && D2>0 && D3>0))
+            System.out.println("Поскольку диагональные миноры положительны, функция выпукла");
     }
 
 

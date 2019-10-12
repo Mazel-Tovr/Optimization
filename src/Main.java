@@ -60,8 +60,21 @@ public class Main {
         Task6 task6 = new Task6(4d,2d,10d,M);
         task6.getConclusionAboutThePresenceOfExtremes();
         System.out.println("---------------------\n"+"Task 7\n"+"------------------------");
-        Task7 task7 = new Task7();
+         int [][] hessMatrix1 = {
+                {-2,2,0},
+                {2,-12,20},
+                {0,20,-46}
+        };
+        Task7and8 task7 = new Task7and8(hessMatrix1);
         task7.getConclusionAboutThePresenceOfExtremes();
+        System.out.println("---------------------\n"+"Task 8\n"+"------------------------");
+        int [][] hessMatrix2 = {
+                {2,0,0},
+                {0,2,0},
+                {0,0,2}
+        };
+        Task7and8 task8 = new Task7and8(hessMatrix2);
+        task8.getConclusionAboutThePresenceOfExtremes();
 
 
     }

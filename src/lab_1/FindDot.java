@@ -26,7 +26,7 @@ public class FindDot
             firstDerivative();
             secondDerivative();
             Z = X - F / D;
-          //  System.out.println(X +" "+ Z);
+            System.out.println(X +" "+ Z);
         }
         while (Math.abs(Z-X)>epsilon);
         X = Z;

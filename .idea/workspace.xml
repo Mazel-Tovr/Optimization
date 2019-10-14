@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be9f3879-59b4-4202-9331-4ddb0d70fa37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab_2/Task6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab_2/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab_2/Task6.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab_2/Task5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab_2/Task5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab_2/Task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab_2/Task5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Отчеты/Лабораторная работа 2/~$мОтчет.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Отчеты/Лабораторная работа 2/~$мОтчет.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Отчеты/Лабораторная работа 2/ДемОтчет.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Отчеты/Лабораторная работа 2/ДемОтчет.docx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

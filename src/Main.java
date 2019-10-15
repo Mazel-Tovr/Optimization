@@ -102,10 +102,10 @@ public class Main {
           // lab2();
         try {
             lab3();
-        } catch (IOException e) {
+        } catch (IOException e)
+        {
             e.printStackTrace();
         }
-
 
     }
 }

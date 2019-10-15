@@ -90,11 +90,23 @@ public class FibonachiSearch
                  X3=X4;
                  System.out.println(X1+" "+X3);
              }
+             else
+             {
+                 X1 = X4;
+                 System.out.println(X1+" "+X3);
+             }
          }
-         if(X2<X4)
+         else if(X2<X4)
          {
              X1 = X2;X2=X4;F2=F4;
              System.out.println(X1+" "+X2);
+         }
+         else
+         {
+             X3 = X2;
+             X2 = X4;
+             F2 = F4;
+             System.out.println(X1 + " " + X3);
          }
          K = K+1;
         }while (K<= N);

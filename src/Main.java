@@ -1,9 +1,14 @@
+import lab3.FibonachiSearch;
 import lab_1.FindDot;
 import lab_1.FindDotF2;
 import lab_1.FindDotF3;
 import practice_1.*;
 import practice_2.*;
 import lab_2.*;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Main {
 
@@ -75,14 +80,31 @@ public class Main {
         };
         Task7and8 task8 = new Task7and8(hessMatrix2);
         task8.getConclusionAboutThePresenceOfExtremes();
-
+    }
+   static void lab3()throws IOException
+    {
+        System.out.println("Задайте EPSILON");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Double epsilon = Double.valueOf(reader.readLine());
+        System.out.println("Задайте интервал A,B");
+        Double A =Double.valueOf(reader.readLine());
+        Double B = Double.valueOf(reader.readLine());
+        System.out.println("Задайте N");
+        Integer N = Integer.valueOf(reader.readLine());
+        FibonachiSearch fibonachiSearch = new FibonachiSearch(epsilon,A,B,N);
+        fibonachiSearch.search();
 
     }
     public static void main(String[] args) {
         // lab1();
         // practice1();
         // pratice2();
-           lab2();
+          // lab2();
+        try {
+            lab3();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 
     }

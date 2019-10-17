@@ -1,4 +1,6 @@
 import lab3.FibonachiSearch;
+import lab3.FibonachiSearchTask4;
+import lab3.FibonachiSearchTask5;
 import lab_1.FindDot;
 import lab_1.FindDotF2;
 import lab_1.FindDotF3;
@@ -83,6 +85,7 @@ public class Main {
     }
    static void lab3()throws IOException
     {
+        System.out.println("----------------------\n"+"-------Task 2-3--------\n"+"-------------------------");
         System.out.println("Задайте EPSILON");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Double epsilon = Double.valueOf(reader.readLine());
@@ -93,7 +96,12 @@ public class Main {
         Integer N = Integer.valueOf(reader.readLine());
         FibonachiSearch fibonachiSearch = new FibonachiSearch(epsilon,A,B,N);
         fibonachiSearch.search();
-
+        System.out.println("----------------------\n"+"-------Task 4--------\n"+"-----------------------");
+        fibonachiSearch = new FibonachiSearchTask4(epsilon);
+        fibonachiSearch.search();
+        System.out.println("----------------------\n"+"-------Task 5--------\n"+"------------------------");
+        fibonachiSearch = new FibonachiSearchTask5();
+        fibonachiSearch.search();
     }
     public static void main(String[] args) {
         // lab1();

@@ -2,13 +2,13 @@ package lab3;
 
 public class FibonachiSearch
 {
-    private double epsilon;
-    private double A;
-    private double B;
-    private int N;
-    private double Z;
+    protected double epsilon;
+    protected double A;
+    protected double B;
+    protected int N;
+    protected double Z;
 
- private long fibonachi(int number)
+    protected long fibonachi(int number)
  {
      if (number < 0) return 0;
      if (number == 0) return 1;
@@ -118,9 +118,9 @@ public class FibonachiSearch
 
 
     //Функция
-    void getZ(double x)
+    protected void getZ(double x)
     {
-        Z = 2*Math.pow(x,2)-Math.exp(x);
-        //Z = x * x * x * x -14 * x * x * x + 60 * x * x -70 * x;
+        Z = Math.pow(x,4) - 14 *Math.pow(x,3) + 60*Math.pow(x,2)-70*x;
+        //Z = 2*Math.pow(x,2)-Math.exp(x);
     }
 }

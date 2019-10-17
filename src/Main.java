@@ -87,17 +87,17 @@ public class Main {
     {
         System.out.println("----------------------\n"+"-------Task 2-3--------\n"+"-------------------------");
         System.out.println("Задайте EPSILON");
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        Double epsilon = Double.valueOf(reader.readLine());
-        System.out.println("Задайте интервал A,B");
-        Double A =Double.valueOf(reader.readLine());
-        Double B = Double.valueOf(reader.readLine());
-        System.out.println("Задайте N");
-        Integer N = Integer.valueOf(reader.readLine());
-        FibonachiSearch fibonachiSearch = new FibonachiSearch(epsilon,A,B,N);
+//        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+//        Double epsilon = Double.valueOf(reader.readLine());
+//        System.out.println("Задайте интервал A,B");
+//        Double A =Double.valueOf(reader.readLine());
+//        Double B = Double.valueOf(reader.readLine());
+//        System.out.println("Задайте N");
+//        Integer N = Integer.valueOf(reader.readLine());
+        FibonachiSearch fibonachiSearch = new FibonachiSearch(0,0,1,10);
         fibonachiSearch.search();
         System.out.println("----------------------\n"+"-------Task 4--------\n"+"-----------------------");
-        fibonachiSearch = new FibonachiSearchTask4(epsilon);
+        fibonachiSearch = new FibonachiSearchTask4();
         fibonachiSearch.search();
         System.out.println("----------------------\n"+"-------Task 5--------\n"+"------------------------");
         fibonachiSearch = new FibonachiSearchTask5();

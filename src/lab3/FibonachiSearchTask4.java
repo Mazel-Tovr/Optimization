@@ -2,9 +2,9 @@ package lab3;
 
 public class FibonachiSearchTask4 extends FibonachiSearch
 {
-    public FibonachiSearchTask4(double epsilon)
+    public FibonachiSearchTask4()
     {
-        super(epsilon, 0, 1, 10);
+        super(0, 0, 1, 10);
     }
 
     @Override

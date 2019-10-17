@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be9f3879-59b4-4202-9331-4ddb0d70fa37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lab3/FibonachiSearchTask4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab3/FibonachiSearchTask5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab3/FibonachiSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab3/FibonachiSearch.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab3/FibonachiSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab3/FibonachiSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3/FibonachiSearchTask4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab3/FibonachiSearchTask4.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +33,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Accenture_IT_Skills_Factory" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">

@@ -1,6 +1,5 @@
 import lab3.FibonachiSearch;
 import lab3.FibonachiSearchTask4;
-import lab3.FibonachiSearchTask5;
 import lab_1.FindDot;
 import lab_1.FindDotF2;
 import lab_1.FindDotF3;
@@ -8,9 +7,7 @@ import practice_1.*;
 import practice_2.*;
 import lab_2.*;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class Main {
 
@@ -85,23 +82,15 @@ public class Main {
     }
    static void lab3()throws IOException
     {
-        System.out.println("----------------------\n"+"-------Task 2-3--------\n"+"-------------------------");
-        System.out.println("Задайте EPSILON");
-//        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-//        Double epsilon = Double.valueOf(reader.readLine());
-//        System.out.println("Задайте интервал A,B");
-//        Double A =Double.valueOf(reader.readLine());
-//        Double B = Double.valueOf(reader.readLine());
-//        System.out.println("Задайте N");
-//        Integer N = Integer.valueOf(reader.readLine());
+       System.out.println("----------------------\n"+"-------Task 3,5--------\n"+"-------------------------");
         FibonachiSearch fibonachiSearch = new FibonachiSearch(0,0,1,10);
-        fibonachiSearch.search();
-        System.out.println("----------------------\n"+"-------Task 4--------\n"+"-----------------------");
+      //  fibonachiSearch.search();
+        System.out.println("----------------------\n"+"-------Task 2,4--------\n"+"-----------------------");
         fibonachiSearch = new FibonachiSearchTask4();
         fibonachiSearch.search();
-        System.out.println("----------------------\n"+"-------Task 5--------\n"+"------------------------");
-        fibonachiSearch = new FibonachiSearchTask5();
-        fibonachiSearch.search();
+//        System.out.println("----------------------\n"+"-------Task 5--------\n"+"------------------------");
+//        fibonachiSearch = new FibonachiSearchTask5();
+//        fibonachiSearch.search();
     }
     public static void main(String[] args) {
         // lab1();
@@ -114,6 +103,8 @@ public class Main {
         {
             e.printStackTrace();
         }
+//        GoldenRatio goldenRatio = new GoldenRatio(0,2,0.00005);
+//        goldenRatio.search();
 
     }
 }

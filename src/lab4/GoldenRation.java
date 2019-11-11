@@ -1,6 +1,6 @@
 package lab4;
 
-public class GoldenRatio
+public class GoldenRation
 {
 
     private double A;
@@ -8,7 +8,7 @@ public class GoldenRatio
     private double epsilon;
     private double Z;
 
-    public GoldenRatio(double a, double b, double epsilon)
+    public GoldenRation(double a, double b, double epsilon)
     {
         A = a;
         B = b;
@@ -62,7 +62,8 @@ public class GoldenRatio
 
     private void function(double X)
     {
-        Z = -Math.exp(-X)*Math.log(X);
+        //Z = -Math.exp(-X)*Math.log(X);
+        Z = 2 *Math.pow(X,2)+3*Math.exp(-X);
     }
 
 }

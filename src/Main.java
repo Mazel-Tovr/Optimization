@@ -1,5 +1,6 @@
 import lab3.FibonachiSearch;
 import lab3.FibonachiSearchTask4;
+import lab4.GoldenRation;
 import lab_1.FindDot;
 import lab_1.FindDotF2;
 import lab_1.FindDotF3;
@@ -92,17 +93,19 @@ public class Main {
 //        fibonachiSearch = new FibonachiSearchTask5();
 //        fibonachiSearch.search();
     }
-    public static void main(String[] args) {
+
+    static void lab4()
+    {
+        GoldenRation ration = new GoldenRation(0,1,0.0001);
+        ration.search();
+    }
+    public static void main(String[] args)throws IOException {
         // lab1();
         // practice1();
         // pratice2();
-          // lab2();
-        try {
-            lab3();
-        } catch (IOException e)
-        {
-            e.printStackTrace();
-        }
+          // lab2(
+          //  lab3();
+        lab4();
 //        GoldenRatio goldenRatio = new GoldenRatio(0,2,0.00005);
 //        goldenRatio.search();
 

@@ -45,6 +45,7 @@ public class QuadraticInterpolation
             Ff[3]=Z;
         }
         System.out.println("Вычисление первого аппроксимирующего минимума");
+        System.out.println("X(I)\tF(I)");
         double DN = (Xx[2]-Xx[3])*Ff[1];
         DN = DN+(Xx[3]-Xx[1])*Ff[2]+(Xx[1]-Xx[2])*Ff[3];
         double NM  = (Xx[2]*Xx[2]-Xx[3]*Xx[3])*Ff[1];
@@ -54,7 +55,8 @@ public class QuadraticInterpolation
         X=Xx[4];
         function(X);
         Ff[4] = Z;
-        do
+        double F;
+        while(true)
         {
             for (int j = 1; j < 4 ; j++)
             {
@@ -67,16 +69,16 @@ public class QuadraticInterpolation
                     X=Xx[j];
                     Xx[j]=Xx[k];
                     Xx[k]=X;
-                    double F = Ff[j];
+                    F = Ff[j];
                     Ff[j]=Ff[k];
                     Ff[k]=F;
                 }
             }
             for (int i = 1; i < 5 ; i++)
             {
-                System.out.println(Xx[i]+", "+Ff[i]);
+                System.out.println(Xx[i]+"\t"+Ff[i]);
             }
-
+            System.out.println("\n");
             if (Math.abs(Xx[1]-Xx[2])<epsilon)
             {
                 break;
@@ -89,15 +91,22 @@ public class QuadraticInterpolation
                 Xx[3]=Xx[4];
                 Ff[3]=Ff[4];
             }
-
-        }while (true);
-
+            DN =(Xx[2]-Xx[3])*Ff[1]+(Xx[3]-Xx[1])*Ff[2]+(Xx[1]-Xx[2])*Ff[3];
+            F =(Ff[1]-Ff[2])/(2*DN);
+            F=F*(Xx[2]-Xx[3])*(Xx[3]-Xx[1]);
+            Xx[4]=(Xx[1]+Xx[2])/2+F;
+            X=Xx[4];
+            function(X);
+            Ff[4] =Z;
+        }
+        System.out.println("\n");
+        System.out.println("X="+Xx[1]+" F="+Ff[1]);
 
     }
 
     private void function(double X)
     {
-        Z = 001;
+        Z = 2*X*X-Math.exp(X);
     }
 
    private int getSignum(double number)

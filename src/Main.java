@@ -1,6 +1,7 @@
 import lab3.FibonachiSearch;
 import lab3.FibonachiSearchTask4;
 import lab4.GoldenRation;
+import lab4.QuadraticInterpolation;
 import lab_1.FindDot;
 import lab_1.FindDotF2;
 import lab_1.FindDotF3;
@@ -97,7 +98,9 @@ public class Main {
     static void lab4()
     {
         GoldenRation ration = new GoldenRation(0,1,0.0001);
-        ration.search();
+      //  ration.search();
+        QuadraticInterpolation quadraticInterpolation = new QuadraticInterpolation(1,0.5,0.001);
+        quadraticInterpolation.search();
     }
     public static void main(String[] args)throws IOException {
         // lab1();

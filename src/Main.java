@@ -98,7 +98,8 @@ public class Main {
     static void lab4()
     {
         GoldenRation ration = new GoldenRation(0,1,0.0001);
-      //  ration.search();
+        ration.search();
+        System.out.println("--");
         QuadraticInterpolation quadraticInterpolation = new QuadraticInterpolation(1,0.5,0.001);
         quadraticInterpolation.search();
     }
@@ -109,8 +110,6 @@ public class Main {
           // lab2(
           //  lab3();
         lab4();
-//        GoldenRatio goldenRatio = new GoldenRatio(0,2,0.00005);
-//        goldenRatio.search();
 
     }
 }

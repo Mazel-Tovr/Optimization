@@ -17,7 +17,7 @@ public class GoldenRation
     public void search()
     {
         double T1 = 0.3819660113;
-        double T2 = 1 -T1;
+        double T2 = 1 - T1;
         double X0=A;
         double X1=A+T1*(B-A);
         double X2=A+T2*(B-A);
@@ -55,7 +55,7 @@ public class GoldenRation
                 function(X);
                 F1=Z;
             }
-        }while (I>epsilon);
+        }while (I > epsilon);
         System.out.println("X= "+X1+"\t"+"F(X)= "+F1);
 
     }

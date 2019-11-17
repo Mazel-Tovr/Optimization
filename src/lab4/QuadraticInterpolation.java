@@ -7,7 +7,6 @@ public class QuadraticInterpolation
     //Wag
     private double H;
     private double epsilon;
-
     private double Z;
 
     public QuadraticInterpolation(double a, double h, double epsilon)

@@ -2,9 +2,7 @@ package lab4;
 
 public class QuadraticInterpolation
 {
-    //Nachalnoe znachenie a
     private double A;
-    //Wag
     private double H;
     private double epsilon;
     private double Z;

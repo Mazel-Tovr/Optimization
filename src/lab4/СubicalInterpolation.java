@@ -39,7 +39,7 @@ public class СubicalInterpolation
         }
         System.out.println("Задайте точность Е");
         double E = scanner.nextDouble();
-        System.out.println("Предпологаемое занчение минимум");
+        System.out.println("Предполагаемое занчение минимум");
         double FM = scanner.nextDouble();
         System.out.println("Текущие Значение");
         for (int i = 1; i <N; i++)
@@ -50,7 +50,7 @@ public class СubicalInterpolation
         function5000();
         System.out.println("Итерация "+CC+ "Значение "+Z);
         double FP = Z;
-        function6000();
+        //function6000();
         double G1 = GO;
         double GP,G2, G3, QX;
 
@@ -73,7 +73,7 @@ public class СubicalInterpolation
             function5000();
             FP = Z;
             System.out.println("Возможна нестабильность?");
-            function6000();
+          //  function6000();
             G1 = GO;
         }
 
@@ -97,7 +97,7 @@ public class СubicalInterpolation
             }
             function5000();
             FQ = Z;
-            function6000();
+            //function6000();
             G2 = GO;
             GQ = 0;
             for (int i = 1; i < N; i++)
@@ -121,16 +121,13 @@ public class СubicalInterpolation
                 X[I] = P[I] + DD * D[I];
             function5000();
             FR = Z;
-            function6000();
+            //function6000();
             G3 = GO;
-            //вычислить градиент в новой точке
             GR = 0;
             for (int i = 1; i < N; i++)
                 GR = GR + G[i] * D[i];
             if (GR < 0)
             {
-                /*найти новый интервал и произвести проверку
-                 * условия окончания поиска минимума*/
                 if (Math.abs(GR) < E)
                     break;
                 HH = BB - DD;
@@ -141,7 +138,7 @@ public class СubicalInterpolation
                 }
                 CC = CC + 1;
                 function5000();
-                function6000();
+              //  function6000();
                 System.out.println("Итерация  "+CC+"   Значение  "+Z);
                 FP = Z; GP = GR; G1 = GO;
             }
@@ -149,8 +146,6 @@ public class СubicalInterpolation
             {
                 if (Math.abs(GR) < E)
                     break;
-                /*повторить кубическую интерполяцию.новый
-                 * интервал будет BB-DD*/
                 HH = DD;
                 for (int i = 1; i < N; i++)
                 {
@@ -159,7 +154,7 @@ public class СubicalInterpolation
                 }
                 CC = CC + 1;
                 function5000();
-                function6000();
+                //function6000();
                 System.out.println("Итерация  "+CC+"   Значение  "+Z);
                 FQ = Z; GQ = GR; G2 = GO;
             }
@@ -178,16 +173,16 @@ public class СubicalInterpolation
         Z= Z +Math.pow((1-X[1]),2);
         TT = TT+1;
     }
-    private void function6000()
-    {
-        GO = 0;
-        G[1] = -400*X[1]*(X[2]-X[1]*X[1]);
-        G[1] =G[1]-2*(1-X[1]);
-        G[2] = 200*(X[2]-X[1]*X[1]);
-        for (int i = 0; i < N; i++)
-        {
-            GO=GO+G[i]*G[i];
-        }
-        GO = Math.sqrt(GO);
-    }
+//    private void function6000()
+//    {
+//        GO = 0;
+//        G[1] = -400*X[1]*(X[2]-X[1]*X[1]);
+//        G[1] =G[1]-2*(1-X[1]);
+//        G[2] = 200*(X[2]-X[1]*X[1]);
+//        for (int i = 0; i < N; i++)
+//        {
+//            GO=GO+G[i]*G[i];
+//        }
+//        GO = Math.sqrt(GO);
+//    }
 }

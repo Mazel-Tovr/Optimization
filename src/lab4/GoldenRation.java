@@ -29,16 +29,16 @@ public class GoldenRation
         function(X);
         double F2 =Z;
         System.out.println("Текущий интервал");
-        double I;
+        double i;
         do
         {
             System.out.println(X0+"\t"+X3);
             if(F2<F1)
             {
-                I=X3-X1;
+                i=X3-X1;
                 X0=X1;
                 X1=X2;
-                X2=X0+T2*I;
+                X2=X0+T2*i;
                 F1=F2;
                 X=X2;
                 function(X);
@@ -46,16 +46,16 @@ public class GoldenRation
             }
             else
             {
-                I = X2 - X0;
+                i = X2 - X0;
                 X3=X2;
                 X2=X1;
-                X1=X0+T1*I;
+                X1=X0+T1*i;
                 F2=F1;
                 X=X1;
                 function(X);
                 F1=Z;
             }
-        }while (I > epsilon);
+        }while (i > epsilon);
         System.out.println("X= "+X1+"\t"+"F(X)= "+F1);
 
     }
@@ -63,7 +63,8 @@ public class GoldenRation
     private void function(double X)
     {
         //Z = -Math.exp(-X)*Math.log(X);
-        Z = 2 *Math.pow(X,2)+3*Math.exp(-X);
+       // Z = 2 *Math.pow(X,2)+3*Math.exp(-X);
+        Z = Math.pow((1-Math.exp(X)*Math.sin(X)),2);
     }
 
 }

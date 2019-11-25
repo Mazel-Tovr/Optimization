@@ -4,12 +4,8 @@
     <list default="true" id="be9f3879-59b4-4202-9331-4ddb0d70fa37" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab4/GoldenRation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab4/GoldenRation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab4/СubicalInterpolation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab4/СubicalInterpolation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab4/GoldenRation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab4/GoldenRation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lab4/СubicalInterpolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab4/СubicalInterpolation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Отчеты/Лабораторная работа 4/Иванов.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Отчеты/Лабораторная работа 4/Иванов.docx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -98,13 +98,13 @@ public class Main {
 
     static void lab4()
     {
-        GoldenRation ration = new GoldenRation(0,1,0.0001);
-        ration.search();
+//        GoldenRation ration = new GoldenRation(0,1,0.0001);
+//        ration.search();
 //        System.out.println("--");
 //        QuadraticInterpolation quadraticInterpolation = new QuadraticInterpolation(1,0.5,0.001);
 //        quadraticInterpolation.search();
-//        СubicalInterpolation сubicalInterpolation = new СubicalInterpolation();
-//        сubicalInterpolation.search();
+        СubicalInterpolation сubicalInterpolation = new СubicalInterpolation();
+        сubicalInterpolation.search();
     }
     public static void main(String[] args)throws IOException {
         // lab1();

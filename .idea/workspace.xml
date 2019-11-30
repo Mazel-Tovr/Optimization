@@ -47,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.HookeJeeves">
     <configuration name="CoordinateDescent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab5.CoordinateDescent" />
       <module name="OptimizationMethods" />
@@ -132,9 +132,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.HookeJeeves" />
         <item itemvalue="Application.CoordinateDescent" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Task6" />
         <item itemvalue="Application.Task5" />
       </list>

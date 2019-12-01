@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace Lab5
 {
     class Program
     {
@@ -156,9 +156,9 @@ namespace ConsoleApp1
             }
             F[H] = FE;
             Console.WriteLine("Выполните растяжение в строке 1480 " + Z);
-            if (!Check())
-                goto S620;
-            else goto S2220;
+
+            goto S2060;
+
             S1520:
             for (int j = 0; j < N; j++)
             {
@@ -166,9 +166,9 @@ namespace ConsoleApp1
             }
             F[H] = FR;
             Console.WriteLine("Выполните отражение в строке 1560");
-            if (!Check())
-                goto S620;
-            else goto S2220;
+
+            goto S2060;
+
             S1600:
             if (FR > FH)
                 goto S1700;
@@ -194,9 +194,8 @@ namespace ConsoleApp1
             }
             F[H] = FC;
             Console.WriteLine("Выполните сжатие в строке 1880 " + Z);
-            if (!Check())//1900
-                goto S620;
-            else goto S2220;
+
+            goto S2060;
 
             S1920:
             for (int i = 0; i < N + 1; i++)
@@ -211,7 +210,20 @@ namespace ConsoleApp1
             }
             Console.WriteLine("Выполните редукцию в строке 2040");
 
-            if (!Check())
+            goto S2060;
+
+            S2060:
+            float S1 = 0, S2 = 0;
+            for (int i = 0; i < F.Length; i++)
+            {
+                S1 = S1 + F[i];
+                S2 = S2 + F[i] * F[i];
+            }
+            float SIG = S2 - S1 * S1 / F.Length;
+            SIG = SIG / F.Length;
+            if (SIG < 1E-10)
+                goto S2220;
+            else
                 goto S620;
             S2220:
             Console.WriteLine("Минимум найден в точке ");
@@ -224,27 +236,11 @@ namespace ConsoleApp1
             Console.WriteLine("Количество вычислений функции = " + TEV);
         }
 
-
-        static bool Check()
-        {
-            float S1 = 0, S2 = 0;
-            for (int i = 0; i < F.Length; i++)
-            {
-                S1 = S1 + F[i];
-                S2 = S2 + F[i] * F[i];
-            }
-            float SIG = S2 - S1 * S1 / F.Length;
-            SIG = SIG / F.Length;
-            if (SIG < 1E-10)
-                return true;
-            return false;
-        }
-
         static void function()
         {
             TEV = TEV + 1;
             //  Z = (float)(Math.Pow(Math.Pow(X[0], 2) + X[1] - 11, 2) + Math.Pow(X[0] + Math.Pow(X[1], 2) - 7, 2));
-            //  Z = (float)(Math.Pow(1 - X[1], 2) + 100 * Math.Pow(X[1] - Math.Pow(X[0], 2), 2));
+              Z = (float)(Math.Pow(1 - X[1], 2) + 100 * Math.Pow(X[1] - Math.Pow(X[0], 2), 2));
 
             // TEV = TEV + 1;
             //Z = (float)(100 * Math.Pow(X[1] - Math.Pow(X[0], 2), 2) + Math.Pow(1 - X[0], 2));

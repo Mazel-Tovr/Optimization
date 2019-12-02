@@ -12,16 +12,20 @@ public class CoordinateDescent {
 
         private static double[] coordinateDescentMethod(double[] Xo, double eps) {
                 double a=-5, b=5;
+                int cc = 0;
                 // метод золотого сечения
                 double[] Xc={0,0},Xd={0,0},x={Xo[0]+10*eps,Xo[1]+10*eps};
                 while(abs(f(x) - f(Xo))>eps) {
+
                         x[0]=Xo[0];
                         x[1]=Xo[1];
                         for (int i = 0; i < 2; i++) {
                                 a=-10;
                                 b=10;
                                 double c = a + (b - a) * (3 - sqrt(5)) / 2, d = a + (b - a) * (sqrt(5) - 1) / 2;
-                                while (b - a >= eps*eps) {
+                                while (b - a >= eps*eps)
+                                {
+                                        cc++;
                                         Xc[0] = Xo[0];
                                         Xc[1] = Xo[1];
                                         Xd[0] = Xo[0];
@@ -41,6 +45,7 @@ public class CoordinateDescent {
                                 Xo[i] += (a + b) / 2;
                         }
                 }
+                System.out.println("Кол-во шагов "+ cc);
                 return Xo;
         }
 

@@ -19,6 +19,7 @@ public class HookeJeeves {
 
     double f (double x1,double x2) {
         return 100 * Math.pow(x2 - Math.pow(x1,2),2) + Math.pow(1 - x1,2);
+               // Math.pow(Math.pow(x1,2)+x2-11,2)+Math.pow((x1+Math.pow(x2,2)-7),2);
     }
 
     void search() {

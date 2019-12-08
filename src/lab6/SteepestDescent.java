@@ -5,9 +5,6 @@ import java.util.Scanner;
 public class SteepestDescent
 {
 
-
-
-
     void search()
     {
         Scanner in = new Scanner(System.in);

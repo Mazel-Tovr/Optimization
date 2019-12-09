@@ -1,0 +1,7 @@
+C:\GitHub\Optimization\src\lab6\vs\lab6\lab6\bin\Debug\lab6.exe.config
+C:\GitHub\Optimization\src\lab6\vs\lab6\lab6\bin\Debug\lab6.exe
+C:\GitHub\Optimization\src\lab6\vs\lab6\lab6\bin\Debug\lab6.pdb
+C:\GitHub\Optimization\src\lab6\vs\lab6\lab6\obj\Debug\lab6.csprojResolveAssemblyReference.cache
+C:\GitHub\Optimization\src\lab6\vs\lab6\lab6\obj\Debug\lab6.csproj.CoreCompileInputs.cache
+C:\GitHub\Optimization\src\lab6\vs\lab6\lab6\obj\Debug\lab6.exe
+C:\GitHub\Optimization\src\lab6\vs\lab6\lab6\obj\Debug\lab6.pdb

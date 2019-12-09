@@ -12,7 +12,8 @@ namespace lab6
     {
         static void Main(string[] args)
         {
-            DFP l = new DFP();
+            //DFP l = new DFP();
+            FRMethod l = new FRMethod();
             l.search();
             ReadLine();
         }

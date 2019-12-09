@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be9f3879-59b4-4202-9331-4ddb0d70fa37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lab6/SteepestDescent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab5/CoordinateDescent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab5/CoordinateDescent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab5/HookeJeeves.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab5/HookeJeeves.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab5/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab5/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab5/CoordinateDescent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab5/CoordinateDescent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab5/HookeJeeves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab5/HookeJeeves.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Отчеты/Лабораторная работа 5/Завгороднев.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Отчеты/Лабораторная работа 5/Завгороднев.docx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

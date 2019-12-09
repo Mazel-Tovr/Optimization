@@ -4,21 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab5_3
+namespace Lab5
 {
     class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
+            nelderMeadMethod();
+            Console.ReadKey();
         }
+
 
         static float[] X;
         static float Z;
         static int TEV = 0;
         static float[] F;
 
-       
-        static void Nelder_Mead_Method()
+
+        static void nelderMeadMethod()
         {
             Console.WriteLine("Симплексный метод Нелдера-Мида");
             Console.WriteLine("Функция Z=F(X1,X2,...,XN) вычисляется в строке 5000");
@@ -33,16 +36,16 @@ namespace Lab5_3
             Console.WriteLine("Введите длину шага");
             float K = float.Parse(Console.ReadLine());
 
-            for (int I = 1; I < N + 1; I++)
+            for (int i = 1; i < N + 1; i++)
             {
-                for (int J = 0; J < N; J++)
+                for (int j = 0; j < N; j++)
                 {
-                    if (J == I - 1)
+                    if (j == i - 1)
                     {
-                        S[I, J] = S[0, J] + K;
+                        S[i, j] = S[0, j] + K;
                         continue;
                     }
-                    S[I, J] = S[0, J];
+                    S[i, j] = S[0, j];
                 }
             }
             Console.WriteLine("Введите Alfa,Beta,Gamma");
@@ -59,43 +62,43 @@ namespace Lab5_3
             float[] XE = new float[N];
             F = new float[N + 1];
 
-            for (int I = 0; I < N + 1; I++)
+            for (int i = 0; i < N + 1; i++)
             {
-                for (int J = 0; J < N; J++)
+                for (int j = 0; j < N; j++)
                 {
-                    X[J] = S[I, J];
+                    X[j] = S[i, j];
                 }
                 function();
-                F[I] = Z;
+                F[i] = Z;
             }
 
             S620:
             int H = 0, L = 0;
             double FH = -1E+20, FL = 1E+20;
-            for (int I = 0; I < N + 1; I++)
+            for (int i = 0; i < N + 1; i++)
             {
-                if (F[I] > FH)
+                if (F[i] > FH)
                 {
-                    FH = F[I];
-                    H = I;
+                    FH = F[i];
+                    H = i;
                 }
-                if (F[I] < FL)
+                if (F[i] < FL)
                 {
-                    FL = F[I];
-                    L = I;
+                    FL = F[i];
+                    L = i;
                 }
             }
 
             double FG = -1E+20;
             int G = 0;
-            for (int I = 0; I < N + 1; I++)
+            for (int i = 0; i < N + 1; i++)
             {
-                if (I == H)
+                if (i == H)
                     continue;
-                if (F[I] > FG)
+                if (F[i] > FG)
                 {
-                    FG = F[I];
-                    G = I;
+                    FG = F[i];
+                    G = i;
                 }
             }
             for (int j = 0; j < N; j++)
@@ -109,9 +112,9 @@ namespace Lab5_3
                 }
 
                 XO[j] = XO[j] / N;
-                XH[j] = S[H, J];
-                XG[j] = S[G, J];
-                XL[j] = S[L, J];
+                XH[j] = S[H, j];
+                XG[j] = S[G, j];
+                XL[j] = S[L, j];
             }
             for (int j = 0; j < N; j++)
             {
@@ -128,7 +131,7 @@ namespace Lab5_3
             }
             function();
             float FR = Z;
-            Console.WriteLine("Выполните отражение в строке 1220"+  Z);
+            Console.WriteLine("Выполните отражение в строке 1220" + Z);
 
             if (FR < FL)
                 goto S1300;
@@ -152,10 +155,10 @@ namespace Lab5_3
                 S[H, j] = XE[j];
             }
             F[H] = FE;
-            Console.WriteLine("Выполните растяжение в строке 1480 "+ Z);
-            if (!Check())
-                goto S620;
-            else goto S2220;
+            Console.WriteLine("Выполните растяжение в строке 1480 " + Z);
+
+            goto S2060;
+
             S1520:
             for (int j = 0; j < N; j++)
             {
@@ -163,9 +166,9 @@ namespace Lab5_3
             }
             F[H] = FR;
             Console.WriteLine("Выполните отражение в строке 1560");
-            if (!Check())
-                goto S620;
-            else goto S2220;
+
+            goto S2060;
+
             S1600:
             if (FR > FH)
                 goto S1700;
@@ -190,10 +193,9 @@ namespace Lab5_3
                 S[H, j] = XC[j];
             }
             F[H] = FC;
-            Console.WriteLine("Выполните сжатие в строке 1880 "+  Z);
-            if (!Check())//1900
-                goto S620;
-            else goto S2220;
+            Console.WriteLine("Выполните сжатие в строке 1880 " + Z);
+
+            goto S2060;
 
             S1920:
             for (int i = 0; i < N + 1; i++)
@@ -204,26 +206,13 @@ namespace Lab5_3
                     X[j] = S[i, j];
                 }
                 function();
-                F[I] = Z;
+                F[i] = Z;
             }
             Console.WriteLine("Выполните редукцию в строке 2040");
 
-            if (!Check())
-                goto S620;
-            S2220:
-            Console.WriteLine("Минимум найден в точке ");
-            for (int J = 0; J < N; J++)
-            {
-                Console.Write("X "+(J + 1)+" = "+ XL[J]);
-            }
-            Console.WriteLine();
-            Console.WriteLine("Значение минимума функции = "+F[L]);
-            Console.WriteLine("Количество вычислений функции = "+TEV);
-        }
+            goto S2060;
 
-
-        static bool Check()
-        {
+            S2060:
             float S1 = 0, S2 = 0;
             for (int i = 0; i < F.Length; i++)
             {
@@ -233,15 +222,25 @@ namespace Lab5_3
             float SIG = S2 - S1 * S1 / F.Length;
             SIG = SIG / F.Length;
             if (SIG < 1E-10)
-                return true;
-            return false;
+                goto S2220;
+            else
+                goto S620;
+            S2220:
+            Console.WriteLine("Минимум найден в точке ");
+            for (int J = 0; J < N; J++)
+            {
+                Console.Write("X " + (J + 1) + " = " + XL[J]);
+            }
+            Console.WriteLine();
+            Console.WriteLine("Значение минимума функции = " + F[L]);
+            Console.WriteLine("Количество вычислений функции = " + TEV);
         }
 
         static void function()
         {
             TEV = TEV + 1;
-            Z = (float)(Math.Pow(Math.Pow(X[0], 2) + X[1] - 11, 2) + Math.Pow(X[0] + Math.Pow(X[1], 2) - 7, 2));
-
+            //  Z = (float)(Math.Pow(Math.Pow(X[0], 2) + X[1] - 11, 2) + Math.Pow(X[0] + Math.Pow(X[1], 2) - 7, 2));
+              Z = (float)(Math.Pow(1 - X[1], 2) + 100 * Math.Pow(X[1] - Math.Pow(X[0], 2), 2));
 
             // TEV = TEV + 1;
             //Z = (float)(100 * Math.Pow(X[1] - Math.Pow(X[0], 2), 2) + Math.Pow(1 - X[0], 2));
@@ -250,6 +249,5 @@ namespace Lab5_3
             //Z = (float)(Math.Pow(Math.Pow(X[0], 2) + X[1] - 11, 2) + Math.Pow(X[0] + Math.Pow(X[1], 2) - 7, 2));
 
         }
-
     }
 }

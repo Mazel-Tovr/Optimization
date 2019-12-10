@@ -6,19 +6,21 @@ import java.util.List;
 public class SteepestDescent
 {
     private static final int NUMBER_OF_ITERATIONS = 100000;
-    private static double EPS = 1e-5;
+    private static double EPS =  Math.pow(10, -5);
 
-    private static FunctionMethods func = new F1(){};
+    // здесь тупа F1 на F2 меняешь
+    private static FunctionMethods func = new F2(){};
 
     private static List<Double> goldenSection(List<Double> x, double a, double b)
     {
         List<Double> Result = new ArrayList<>();
         for (int i = 0; i < x.size(); i++)
-            Result.add(calculateGS(a, b, i));
+            Result.add(goldenSectionForPartOfFunction(a, b, i));
         return Result;
     }
 
-    private static double calculateGS(double A, double B, int i)
+
+    private static double goldenSectionForPartOfFunction(double A, double B, int i)
     {
         double T1, T2, X;
         T1 = 0.3819660113;
@@ -57,12 +59,12 @@ public class SteepestDescent
     private static List<Double> GradientDescent(List<Double> x0) {
         List<Double> old, cur_x = x0;
         double s;
-        for (int Iterations=1; Iterations<=NUMBER_OF_ITERATIONS; Iterations++) {
+        for (int iterations=1; iterations <= NUMBER_OF_ITERATIONS; iterations++) {
             //save old value
             old = cur_x;
             cur_x = goldenSection(cur_x,-10,10);
 
-            s=Math.abs(func.getFunc(cur_x)-func.getFunc(old));
+            s = Math.abs(func.getFunc(cur_x)-func.getFunc(old));
             if (s<EPS)
                 return cur_x;
         }
@@ -80,6 +82,7 @@ public class SteepestDescent
         for (Double an : ans) {
             System.out.println(an);
         }
+
 
     }
 

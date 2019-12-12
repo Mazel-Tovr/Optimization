@@ -8,19 +8,20 @@ using static System.Math;
 
 namespace lab6
 {
-    class Program
+    class DFP
     {
         static void Main(string[] args)
         {
-            Program l = new Program();
+            //DFP l = new DFP();
+            FRMethod l = new FRMethod();
             l.search();
             ReadLine();
         }
 
-        double Z;
+        float Z;
         int TT = 0;
-        double[] X, P, Q, R, D, G, U, V, Y, M;
-        double GO;
+        float[] X, P, Q, R, D, G, U, V, Y, M;
+        float GO;
         int N;
         void search()
         {
@@ -29,16 +30,16 @@ namespace lab6
             WriteLine("Введите число переменных");
 
             N = int.Parse(ReadLine())+1;
-            X = new double[N];
-            P = new double[N];
-            Q = new double[N];
-            R = new double[N];
-            D = new double[N];
-            G = new double[N];
-            U = new double[N];
-            V = new double[N];
-            Y = new double[N];
-            M = new double[N];
+            X = new float[N];
+            P = new float[N];
+            Q = new float[N];
+            R = new float[N];
+            D = new float[N];
+            G = new float[N];
+            U = new float[N];
+            V = new float[N];
+            Y = new float[N];
+            M = new float[N];
             double[,] H = new double[N,N];
             double CC = 0;
             double GP, QX, HH, BB,ZZ,WW,W,DD,GR,KK,DK,WK,FP,G1, FQ,G2,GQ;
@@ -55,7 +56,7 @@ namespace lab6
             for (int i = 1; i < N; i++)
             {
                 WriteLine($"X {i} ");
-                X[i] = double.Parse(ReadLine());
+                X[i] = float.Parse(ReadLine());
 
             }
 
@@ -77,7 +78,7 @@ namespace lab6
                 D[i] = 0;
                 for (int j = 1; j < N; j++)
                 {
-                    D[i] = D[i] - H[i, j] * G[j];
+                    D[i] = (float)(D[i] - H[i, j] * G[j]);
                 }
             }
       S600: GP = 0;
@@ -90,7 +91,7 @@ namespace lab6
             if (QX > 1) QX = 1;
             for (int i = 1; i < N; i++)
             {
-                X[i] = P[i] - QX * D[i];
+                X[i] = (float)(P[i] - QX * D[i]);
                 P[i] = X[i];
             }
             function5000();
@@ -105,7 +106,7 @@ namespace lab6
       S700: BB = HH;
             for (int i = 1; i <N; i++)
             {
-                Q[i] = P[i] + BB * D[i];
+                Q[i] = (float)(P[i] + BB * D[i]);
                 X[i] = Q[i];
             }
             function5000();
@@ -128,7 +129,7 @@ namespace lab6
             DD = HH * (1 - (GQ + W - ZZ)) / (GQ - GP + 2 * W);
             for (int i = 1; i < N; i++)
             {
-                X[i] = P[i] + DD * D[i];//870
+                X[i] = (float)(P[i] + DD * D[i]);//870
             }
             function5000();
             double FR = Z;
@@ -169,7 +170,7 @@ namespace lab6
                 M[i] = 0;
                 for (int j = 1; j < N; j++)
                 {
-                    M[i] = M[i] + H[i, j] * U[j];
+                    M[i] = (float)(M[i] + H[i, j] * U[j]);
                 }
                 KK = KK + M[i] * U[i];
                 WK = WK + V[i] * U[i];
@@ -197,22 +198,22 @@ namespace lab6
         void function5000()
         {
             Z = 0;
-            Z = Pow(X[1] + 10 * X[2],2) + 5 * Pow(X[3] - X[4], 2);
-            Z = Z + Pow(X[2] - 2 * X[3], 4) + 10 * Pow(X[1] - X[4], 4);
+            Z = (float)(Pow(X[1] + 10 * X[2],2) + 5 * Pow(X[3] - X[4], 2));
+            Z = (float)(Z + Pow(X[2] - 2 * X[3], 4) + 10 * Pow(X[1] - X[4], 4));
             TT = TT+1;
         }
          void function6000()
         {
             GO = 0;
-            G[1] = 2 * (X[1] + 10 * X[2]) + 40 * Pow(X[1] - X[4], 3);
-            G[2] = 20 * (X[1] + 10 * X[2]) + 4 * Pow(X[2] - 2*X[3], 3);
-            G[3] = 10 * (X[3] - X[4]) - 8 * Pow(X[2] - 2 * X[3], 3);
-            G[4] = -10 * (X[3] - X[4]) - 40 * Pow(X[1] - X[4], 3);
+            G[1] = (float)(2 * (X[1] + 10 * X[2]) + 40 * Pow(X[1] - X[4], 3));
+            G[2] = (float)(20 * (X[1] + 10 * X[2]) + 4 * Pow(X[2] - 2*X[3], 3));
+            G[3] = (float)(10 * (X[3] - X[4]) - 8 * Pow(X[2] - 2 * X[3], 3));
+            G[4] = (float)(-10 * (X[3] - X[4]) - 40 * Pow(X[1] - X[4], 3));
             for (int i = 1; i < N; i++)
             {
                 GO = GO + G[i] * G[i];
             }
-            GO = Sqrt(GO);
+            GO = (float)(Sqrt(GO));
         }
 
     }

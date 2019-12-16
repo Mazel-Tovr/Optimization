@@ -10,7 +10,13 @@ namespace lab6
 {
     class DFP
     {
-       
+        static void Main(string[] args)
+        {
+            //DFP l = new DFP();
+            FRMethod l = new FRMethod();
+            l.search();
+            ReadLine();
+        }
 
         float Z;
         int TT = 0;

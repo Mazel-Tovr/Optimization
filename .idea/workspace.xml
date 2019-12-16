@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="be9f3879-59b4-4202-9331-4ddb0d70fa37" name="Default Changelist" comment="" />
-=======
-    <list default="true" id="be9f3879-59b4-4202-9331-4ddb0d70fa37" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab6/SteepestDescent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6/SteepestDescent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab6/vs/lab6/lab6/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6/vs/lab6/lab6/Program.cs" afterDir="false" />
-    </list>
->>>>>>> master
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,13 +45,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SteepestDescent">
+  <component name="RunManager" selected="Application.DFP">
     <configuration name="CoordinateDescent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab5.CoordinateDescent" />
       <module name="OptimizationMethods" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lab5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DFP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab6.dfp.DFP" />
+      <module name="OptimizationMethods" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab6.dfp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,13 +94,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="OptimizationMethods" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DFP" />
         <item itemvalue="Application.SteepestDescent" />
         <item itemvalue="Application.TestClass" />
         <item itemvalue="Application.HookeJeeves" />
         <item itemvalue="Application.CoordinateDescent" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>

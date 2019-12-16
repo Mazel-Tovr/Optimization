@@ -11,13 +11,6 @@ namespace lab6
 {
     class FRMethod
     {
-        static void Main(string[] args)
-        {
-    
-            FRMethod l = new FRMethod();
-            l.search();
-            ReadLine();
-        }
 
         int N,TV,SV,K,DV=0;
         double[] X, Y, P, Q, D, G;
@@ -117,7 +110,7 @@ namespace lab6
             DD = HH * (1 - (GQ + W - ZZ) / (GQ - GP + 2 * W));
             for (int i = 1; i < N; i++)
             {
-                X[i] = P[i] + DD * D[i];
+                X[i] = P[i] + DD + D[i];
             }
             function5000();
             FR = Z;

@@ -23,7 +23,7 @@ public class DFP
         Scanner sc = new Scanner(System.in);
         N = sc.nextInt();
         double FP, GP, QX, G1, HH, BB, FQ, G2, GQ, ZZ, WW, W, DD, FR, GR, G3, KK, DK, WK;
-        double CC = 0;//CC-колво итераций
+        int CC = 0;//CC-колво итераций
         X = new double[N];
         double[] P = new double[N], V = new double[N], Y = new double[N], M = new double[N], U = new double[N], Q = new double[N], D = new double[N]; G = new double[N];
         double[][] H = new double[N][N];
@@ -45,7 +45,7 @@ public class DFP
             }
 
             function5000();
-            System.out.println(CC+" Z = "+Z); //420
+            System.out.println("Итерация "+CC+" Значение = "+Z); //420
             FP = Z; function6000(); G1 = GO;
             //Градиент запомнить в u и выбрать начальное значение d
             for (int i = 0; i < N; i++)

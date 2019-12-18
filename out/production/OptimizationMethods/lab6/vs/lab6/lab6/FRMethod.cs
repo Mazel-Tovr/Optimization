@@ -11,6 +11,13 @@ namespace lab6
 {
     class FRMethod
     {
+        static void Main(string[] args)
+        {
+    
+            FRMethod l = new FRMethod();
+            l.search();
+            ReadLine();
+        }
 
         int N,TV,SV,K,DV=0;
         double[] X, Y, P, Q, D, G;
@@ -79,7 +86,7 @@ namespace lab6
             BB = HH;
             for (int i = 1; i < N; i++)
             {
-                Q[i] = P[i] - BB * D[i];
+                Q[i] = P[i] + BB * D[i];
                 X[i] = Q[i];
             }
             function5000();
@@ -110,7 +117,7 @@ namespace lab6
             DD = HH * (1 - (GQ + W - ZZ) / (GQ - GP + 2 * W));
             for (int i = 1; i < N; i++)
             {
-                X[i] = P[i] + DD + D[i];
+                X[i] = P[i] + DD * D[i];
             }
             function5000();
             FR = Z;
@@ -142,7 +149,7 @@ namespace lab6
             goto S860;
     S1100:
             if (G3 < 0.000001) goto S1300;
-            if (K == N) goto S1250;
+            if (K == N-1) goto S1250;
             K++;
             AK = G3 * G3 / (GK * GK);
             for (int i = 1; i < N; i++)
@@ -150,7 +157,7 @@ namespace lab6
                 D[i] = -G[i] + AK * D[i];
                 P[i] = X[i];
             }
-            WriteLine($"Новое направление поиска {DV}");
+            WriteLine($"Новое направление поиска {(DV+1)}");
             DV++;
             FP = Z;
             G1 = GO;

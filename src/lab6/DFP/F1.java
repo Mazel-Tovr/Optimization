@@ -1,6 +1,6 @@
-package lab6.DFP;
+package lab6.dfp;
 
-public class F1 implements Function{
+public class F1 implements lab6.DFP.Function {
 
     @Override
     public double getValue(int N, double[] X, double[] fParam) {

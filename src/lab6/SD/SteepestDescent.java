@@ -11,16 +11,8 @@ public class SteepestDescent
     // F1,F2
     private static FunctionMethods func = new F1(){};
 
-    private static SubTaskAlgorithm subTaskAlgorithm = new GoldenSection(func);
+    private static SubTaskAlgorithm subTaskAlgorithm = new Fibonacci(func);
 
-
-//    private static List<Double> GradientF(List<Double> x) {
-//        List<Double> tmp = new ArrayList<>() {};
-//        tmp.add(2 * (x.get(0) - 1));
-//        tmp.add(2 * (x.get(1) - 3));
-//        tmp.add(8 + (x.get(2) + 5));
-//        return tmp;
-//    }
 
     private static List<Double> GradientDescent(List<Double> x0) {
         List<Double> old, cur_x = x0;
@@ -48,8 +40,6 @@ public class SteepestDescent
         for (Double an : ans) {
             System.out.println(an);
         }
-
-
     }
 
 

@@ -14,7 +14,15 @@ namespace Lab7
 
         void function2000()
         {
-            Z = Math.Pow(X[1] - 2, 2) + Math.Pow(X[2] - 5, 2) + Math.Pow(X[3] + 2, 4);
+            // Z = Math.Pow(X[1] - 2, 2) + Math.Pow(X[2] - 5, 2) + Math.Pow(X[3] + 2, 4);
+            if (X[1] >= 0 && X[2] >= 0 && X[1] + X[2] >= 4) //Как по учебнику тут нужно задать проверку 
+            {
+                Z = 3 * Math.Pow(X[1], 2) + 4 * X[1] * X[2] + 5 * Math.Pow(X[2], 2);
+            }
+            else
+            {
+                Z = int.MaxValue;
+            }
         }
          
         public void search() 

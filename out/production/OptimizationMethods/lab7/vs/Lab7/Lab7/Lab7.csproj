@@ -4,15 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C478860B-F152-46A6-B93F-2F28065CA62F}</ProjectGuid>
+    <ProjectGuid>{8337BCF7-12E1-4325-AF53-C30C824679EC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>lab6</RootNamespace>
-    <AssemblyName>lab6</AssemblyName>
+    <RootNamespace>Lab7</RootNamespace>
+    <AssemblyName>Lab7</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,8 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DFP.cs" />
-    <Compile Include="FRMethod.cs" />
+    <Compile Include="Box.cs" />
+    <Compile Include="FAndM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -10,8 +10,9 @@ namespace Lab7
     {
         static void Main(string[] args)
         {
-            FAndM fAnd = new FAndM();
-            fAnd.search();
+            // FAndM fAnd = new FAndM();
+            Hooke_Jeeves hj = new Hooke_Jeeves();
+            hj.search();
             Console.ReadKey();
         }
 

@@ -3,15 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="be9f3879-59b4-4202-9331-4ddb0d70fa37" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab6/DFP/F1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab6/DFP/F1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab6/dfp/DFP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab6/dfp/DFP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab6/vs/lab6/lab6/DFP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab6/vs/lab6/lab6/DFP.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab6/vs/lab6/lab6/FRMethod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab6/vs/lab6/lab6/FRMethod.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab6/DFP/F1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6/DFP/F1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab6/dfp/DFP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6/dfp/DFP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab7/vs/Lab7/Lab7/Box.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab7/vs/Lab7/Lab7/Box.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab7/vs/Lab7/Lab7/FAndM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab7/vs/Lab7/Lab7/FAndM.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab7/vs/Lab7/Lab7/Lab7.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab7/vs/Lab7/Lab7/Lab7.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab6/vs/lab6/.vs/lab6/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6/vs/lab6/.vs/lab6/v15/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab6/vs/lab6/.vs/lab6/v15/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6/vs/lab6/.vs/lab6/v15/Server/sqlite3/storage.ide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab6/vs/lab6/lab6/bin/Debug/lab6.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6/vs/lab6/lab6/bin/Debug/lab6.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab6/vs/lab6/lab6/bin/Debug/lab6.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6/vs/lab6/lab6/bin/Debug/lab6.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab6/vs/lab6/lab6/obj/Debug/lab6.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6/vs/lab6/lab6/obj/Debug/lab6.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab6/vs/lab6/lab6/obj/Debug/lab6.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6/vs/lab6/lab6/obj/Debug/lab6.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +38,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FTP-Client/ftpclient" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">

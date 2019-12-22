@@ -16,8 +16,8 @@ namespace Lab7
             Console.ReadKey();
         }
 
-        double[] X, Y, L, U, XC, XQ, XR, XH,F,G,IC,EC;
-        double Z, PP,X1;
+        double[] X, Y, L, U, XC, XQ, XR, XH, F, G, IC, EC;
+        double Z, PP, X1, F1, FM, A, FR, S1, S2, D, DM, SD;
         int M, N,K,FE, IM,EC1,IC1;
 
         void search()
@@ -81,6 +81,159 @@ namespace Lab7
             F[I] = Z;
             if (I < K) goto S600;
             //IN PORGRESS 
+            for (int j = 1; j < K-1; j++)
+            {
+                for (int i = j+1; i < K -1; i++)//I mb bolbwaya
+                {
+                    if (F[j] <= F[i]) break;
+                    F1 = F[j];
+                    F[j] = F[i];
+                    F[i] = F1;
+                    for (int l = 1; l < N; l++)
+                    {
+                        Y[l] = C[j, l];
+                        C[j, l] = C[i, l];
+                        C[i, l] = Y[l];
+                    }
+                }
+            }
+            FM = F[1];
+
+            Console.WriteLine("Первая точка");
+            Console.WriteLine("Минимальное знафение = "+F[1]);
+            Console.WriteLine("Минимальная точка");
+            for (int l = 1; l < N; l++)
+            {
+                Console.WriteLine("X"+l+" "+C[1,l]);
+            }
+            Console.WriteLine("");
+            A = 1.3;
+   S1190:
+            for (int l = 1; l < N; l++)//1200
+            {
+                XH[l] = C[K, l];
+                XQ[l] = (K * XC[l] - XH[l]) / (K - 1);
+            }
+
+            for (int l = 1; l < N; l++)
+            {
+                XR[l] = (1 + A) * XQ[l] - A * XH[l];
+                X[l] = XR[l];
+            }
+   S1490:
+            IM = 0;
+            function6000();
+
+            if (EC1 == 0 && IC1 == 0) goto S2000;
+            if (EC1 == 0) goto S1800;
+
+
+            for (int j = 1; j < N; j++)
+            {
+                if (EC[j] == 1) XR[j] = L[j] + 0.00001;
+                X[j] = XR[j];
+
+                if (EC[j + N] == 1) XR[j] = U[j] - 0.00001;
+                X[j] = XR[j];
+            }
+   S1800:
+            if (IC1 == 0) goto S2000;
+            for (int l = 1; l < N; l++)
+            {
+                XR[l] = (XR[l] + XQ[l]) / 2;
+                X[l] = XR[l];
+            }
+            goto S1490;
+
+   S2000:
+            function5000();
+            FR = Z;
+
+            if (FR < F[K]) goto S2400;
+            for (int l = 1; l < N; l++)
+            {
+                XR[l] = (XR[l] + XQ[l]) / 2;
+                X[l] = XR[l];
+            }
+            goto S1490;
+   S2400:
+            F[K] = FR;
+            for (int l = 1; l < N; l++)
+            {
+                XC[l] = K * XC[l] - C[K, l] + XR[l];
+                XC[l] = XC[l] / K;
+                C[K, l] = XR[l];
+            }
+
+            for (int j = 1; j < K-1; j++)
+            {
+                for (int i = j+1; i < K; i++)
+                {
+                    if (F[j] <= F[i]) break;
+                    F1 = F[j];
+                    F[j] = F[i];
+                    F[i] = F1;
+                    for (int l = 1; l < N; l++)
+                    {
+                        Y[l] = C[j, l];
+                        C[j, l] = C[i, l];
+                        C[i, l] = Y[l];
+                    }
+                }
+            }
+
+            if (F[1] < FM) PP = 1;
+
+            if (PP == 0) goto S1190;
+
+            S1 = 0;S2 = 0;
+
+            for (int i = 1; i < K; i++)
+            {
+                S1 = S1 + F[i];
+                S2 = S2 + F[i] * F[i];
+            }
+            SD = S2 - S1 * S1 / K;
+            SD = SD / K;
+
+            DM = 0;
+
+            for (int i = 1; i < K-1; i++)
+            {
+                for (int j = i+1; j < K; j++)
+                { 
+                    D=0;
+                    for (int l = 1; l < N; l++)
+                    {
+                        D = D + (C[i, l] - Math.Pow(C[j, l], 2));
+                    }
+                    D = Math.Sqrt(D);
+                    if (D > DM) DM = 0;
+                }
+            }
+
+            if (PP == 0) goto S3790;
+            Console.WriteLine("Новая точка в строке 3500");
+            Console.WriteLine("Минимальное значение = "+F[1]);
+            Console.WriteLine("Точка минимума");
+
+            for (int l = 1; l < N; l++)
+            {
+                Console.WriteLine("X"+l+" "+C[1,l]);
+            }
+            Console.WriteLine("");
+            FM = F[1];
+            PP = 0;
+   S3790:
+            if (SD > 0.000001 && DM > 0.0001) goto S1190;
+            Console.WriteLine("Минимум найден");
+            Console.WriteLine("Точка минимума");
+            for (int l = 1; l < N; l++)
+            {
+                Console.WriteLine("X" + l + " " + C[1, l]);
+            }
+            Console.WriteLine("Минимум функции"+F[1]);
+            Console.WriteLine("Количество вычислений функций"+ FE);
 
         }
         void function5000()

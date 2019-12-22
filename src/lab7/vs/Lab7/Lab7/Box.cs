@@ -12,7 +12,7 @@ namespace Lab7
         {
             FAndM fAnd = new FAndM();
             Hooke_Jeeves hj = new Hooke_Jeeves();
-            hj.search();
+            fAnd.search();
             Console.ReadKey();
         }
 

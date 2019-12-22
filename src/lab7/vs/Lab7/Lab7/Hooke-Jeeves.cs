@@ -106,7 +106,7 @@ namespace Lab7
             }
             J = 1;
             goto l200;
-        l490:
+        l490: 
             K = K / 10;
             Console.WriteLine("Уменьшить длину шага");
             if(K< 1e-08) goto l700;

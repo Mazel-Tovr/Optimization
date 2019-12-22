@@ -12,7 +12,8 @@ namespace Lab7
         {
             FAndM fAnd = new FAndM();
             Hooke_Jeeves hj = new Hooke_Jeeves();
-            fAnd.search();
+            Box b = new Box();
+            b.search();
             Console.ReadKey();
         }
 
@@ -20,11 +21,12 @@ namespace Lab7
         double Z, PP, X1, F1, FM, A, FR, S1, S2, D, DM, SD;
         int M, N,K,FE, IM,EC1,IC1;
 
+        double[] array = new double[]{ 0, 20, 0, 11, 0, 42 };
         void search()
         {
             FE = 0;
             Console.WriteLine("Введите количество ограничений");
-            M = int.Parse(Console.ReadLine());
+            M = int.Parse(Console.ReadLine())+1;
             Console.WriteLine("Введите количество переменных");
             N = int.Parse(Console.ReadLine())+1;
             X = new double[N]; Y = new double[N]; L = new double[N]; U = new double[N]; XC = new double[N]; XQ = new double[N]; XR = new double[N]; XH = new double[N];
@@ -40,10 +42,13 @@ namespace Lab7
                 XC[i] = X[i];
             }
 
-            for (int i = 1; i < N; i++)
+            for (int i = 1,k = 0, j = 1; i < N; i++)
             {
                 //Read
-                //L[i] U[i]
+                L[i] = array[k];
+                U[i] = array[j];
+                k = +2;
+                j = +2;
             }
 
             Console.WriteLine("Введите X");

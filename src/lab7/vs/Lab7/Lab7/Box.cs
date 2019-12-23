@@ -13,7 +13,7 @@ namespace Lab7
             FAndM fAnd = new FAndM();
             Hooke_Jeeves hj = new Hooke_Jeeves();
             Box b = new Box();
-            b.search();
+            fAnd.search();
             Console.ReadKey();
         }
 
@@ -30,10 +30,10 @@ namespace Lab7
             Console.WriteLine("Введите количество переменных");
             N = int.Parse(Console.ReadLine())+1;
             X = new double[N]; Y = new double[N]; L = new double[N]; U = new double[N]; XC = new double[N]; XQ = new double[N]; XR = new double[N]; XH = new double[N];
-            K = 2 * N;
+            K = (2 * (N-1));
             PP = 0;
-            double[,] C = new double[K,N];
-            F = new double[K];G = new double[M];IC = new double[M];EC = new double[2 * N];
+            double[,] C = new double[K+1,N];
+            F = new double[K+1];G = new double[M];IC = new double[M];EC = new double[2 * N];
             Console.WriteLine("Введите начальное значения");
             for (int i = 1; i < N; i++)
             {
@@ -54,19 +54,19 @@ namespace Lab7
             Console.WriteLine("Введите X");
             X1 = double.Parse(Console.ReadLine());
 
-        S640:
             int I = 1;
             function5000();
             F[1] = Z;
-        S600:   
+
+    S600:   
             I++;
             for (int j = 1; j < N; j++)
             {
-                C[I, j] = L[j] + new Random().NextDouble() * (U[j] - L[j]);
+                C[I, j] = L[j] + 0.0001 * (U[j] - L[j]);
                 X[j] = C[I, j];
             }
 
-            IM = 1;//
+    S640:   IM = 1;//
             function6000();
             if (IC1 == 1) goto S720;
             for (int i = 1; i < N; i++)
@@ -74,23 +74,23 @@ namespace Lab7
                 XC[i] = ((I - 1) * XC[i] + C[I, i]) / I;
             }
             goto S760;
-        S720:
+    S720:
             for (int i = 1; i < N; i++)
             {
                 C[I, i] = (C[I, i] + XC[i]) / 2;
                 X[i] = C[I, i];
             }
             goto S640;
-        S760:
+    S760:
             function5000();
             F[I] = Z;
             if (I < K) goto S600;
             //IN PORGRESS 
             for (int j = 1; j < K-1; j++)
             {
-                for (int i = j+1; i < K -1; i++)//I mb bolbwaya
+                for (int i = j+1; i < K; i++)//I mb bolbwaya
                 {
-                    if (F[j] <= F[i]) break;
+                    if (F[j] <= F[i]) continue;
                     F1 = F[j];
                     F[j] = F[i];
                     F[i] = F1;
@@ -116,7 +116,7 @@ namespace Lab7
    S1190:
             for (int l = 1; l < N; l++)//1200
             {
-                XH[l] = C[K, l];
+                XH[l] = C[K, l];//K-1
                 XQ[l] = (K * XC[l] - XH[l]) / (K - 1);
             }
 
@@ -154,7 +154,7 @@ namespace Lab7
             function5000();
             FR = Z;
 
-            if (FR < F[K]) goto S2400;
+            if (FR < F[K]) goto S2400;//K-1
             for (int l = 1; l < N; l++)
             {
                 XR[l] = (XR[l] + XQ[l]) / 2;
@@ -162,19 +162,19 @@ namespace Lab7
             }
             goto S1490;
    S2400:
-            F[K] = FR;
+            F[K] = FR;//K-1
             for (int l = 1; l < N; l++)
             {
-                XC[l] = K * XC[l] - C[K, l] + XR[l];
+                XC[l] = K * XC[l] - C[K, l] + XR[l];//K-1
                 XC[l] = XC[l] / K;
-                C[K, l] = XR[l];
+                C[K, l] = XR[l];//K-1
             }
 
             for (int j = 1; j < K-1; j++)
             {
                 for (int i = j+1; i < K; i++)
                 {
-                    if (F[j] <= F[i]) break;
+                    if (F[j] <= F[i]) continue;
                     F1 = F[j];
                     F[j] = F[i];
                     F[i] = F1;
@@ -210,7 +210,7 @@ namespace Lab7
                     D=0;
                     for (int l = 1; l < N; l++)
                     {
-                        D = D + (C[i, l] - Math.Pow(C[j, l], 2));
+                        D = D + Math.Pow(C[i, l] - C[j, l], 2);
                     }
                     D = Math.Sqrt(D);
                     if (D > DM) DM = 0;
@@ -264,13 +264,13 @@ namespace Lab7
             {
                 for (int i = 1; i < N; i++)
                 {
-                    if (X[i] < L[i]) EC[i] = 1; EC1 = 1;
-                    if (X[i] < U[i]) EC[N+i] = 1;EC1 = 1; //chego bleat?
+                    if (X[i] < L[i]) { EC[i] = 1; EC1 = 1; }
+                    if (X[i] > U[i]) { EC[N + i] = 1; EC1 = 1; }//chego bleat?
 
                 }
             }
             G[1] = X[1] + 2 * X[2] + 2 * X[3];
-            if (G[1] > 72) IC[1] = 1;IC1 = 1;
+            if (G[1] > 72) { IC[1] = 1; IC1 = 1; }
         }
     }
 }

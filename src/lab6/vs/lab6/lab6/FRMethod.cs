@@ -149,7 +149,7 @@ namespace lab6
             goto S860;
     S1100:
             if (G3 < 0.000001) goto S1300;
-            if (K == N-1) goto S1250;
+            if (K == N) goto S1250;
             K++;
             AK = G3 * G3 / (GK * GK);
             for (int i = 1; i < N; i++)

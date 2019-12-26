@@ -15,10 +15,11 @@ public class Optim {
         this.epsilon = epsilon;
     }
 
-    private double function(double z) { return Math.pow(z, 2)+2*z-2*Math.cos(z);}
+    private double function(double z) { return  z*Math.sin(1/z);//Math.pow(z, 2)+2*z-2*Math.cos(z);
+    }
 
     private double derivativeFunction(double z) {
-        return 2*(Math.cos(z)+1);
+        return Math.sin(1/z)-(Math.cos(1/z)/z);//2*(Math.cos(z)+1);
     }
 
     public void getDihord() {
@@ -33,9 +34,9 @@ public class Optim {
                 x1 = xn;
             }
         a1++;
-            //System.out.println(xn);
+            System.out.println(xn);
         } while(Math.abs(x1 - x2) > this.epsilon);
-        System.out.println(a1);
+        System.out.println("Итераций "+a1);
     }
 
     public void getHord() {
@@ -50,7 +51,7 @@ public class Optim {
             fxn = this.function(xn);
             b1++;
         } while(Math.abs(xn - prevxn) > this.epsilon);
-        System.out.println(b1);
+        System.out.println("Итераций "+b1);
     }
 
     public void getKasatelbnblx() {
@@ -64,9 +65,9 @@ public class Optim {
             xn -= fxn / Defxn;
             fxn = this.function(xn);
             Defxn = this.derivativeFunction(xn);
-            //System.out.println(xn);
+            System.out.println(xn);
             c1++;
         } while(Math.abs(xn - prevxn) > this.epsilon);
-        System.out.println(c1);
+        System.out.println("Итераций "+c1);
     }
 }

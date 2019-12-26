@@ -15,11 +15,11 @@ import java.io.IOException;
 public class Main {
 
     static void lab1() {
-        Optim op = new Optim(-0.5,1,Math.pow(10,-7));
+        Optim op = new Optim(0.2,1,Math.pow(10,-5));
         System.out.println("Метод дихотомии:");
         op.getDihord();
-        System.out.println("Метод хорд:");
-        op.getHord();
+        //System.out.println("Метод хорд:");
+       // op.getHord();
         System.out.println("Метод касательных:");
         op.getKasatelbnblx();
     }
@@ -107,12 +107,13 @@ public class Main {
         сubicalInterpolation.search();
     }
     public static void main(String[] args)throws IOException {
-        // lab1();
+        System.out.println( "Функция f(х) = xsin(1/x) ");
+         lab1();
         // practice1();
         // pratice2();
           // lab2(
           //  lab3();
-        lab4();
+        //lab4();
 
     }
 }

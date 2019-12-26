@@ -36,18 +36,18 @@ public void search()
             if (S > 0) Console.WriteLine("Первая точка не является допустимой ");
             T = 0;B = 0;R1 = 0;CC = 0;
             function6000();
-            for (int i = 1; i < N; i++)
-            {
+            for (int i = 1; i < N; i++) //here
+            { 
                 T = T - G[i] * CG[i];
                 B = B + CG[i] * CG[i];
             }
             R1 = T / B;
             if (R1 < 0) R1 = 1;
-  S410:     Console.WriteLine("R = "+R1);
+  S410:     Console.WriteLine("R = "+R1); 
 
             for (int i = 1; i < N; i++)
             {
-                for (int j = 0; j < N; j++)
+                for (int j = 1; j < N; j++)
                 {
                     H[i, j] = 0;
                 }
@@ -147,7 +147,7 @@ S650:
              //S1110:
                 for (int i = 1; i < N; i++)
                 {
-                    for (int j = 0; j < N; j++)
+                    for (int j = 1; j < N; j++)
                     {
                         H[i, j] = H[i, j] - D[i] * D[i] / GP;
                     }
@@ -220,7 +220,7 @@ S650:
             for (int i = 1; i < N; i++)
             {
                 M[i] = 0;
-                for (int j = 0; j < N; j++)
+                for (int j = 1; j < N; j++)
                 {
                     M[i] = M[i] + H[i, j] * U[j];
                 }
@@ -297,13 +297,13 @@ S650:
         }
         void function5000()
         {
-             Z1 = (X[1] - 1) * (X[1] - 2) * (X[1] - 3) + X[3];
-             Z2 = 0;
+            Z1 = (X[1] - 1) * (X[1] - 2) * (X[1] - 3) + X[3];
+            Z2 = 0;
             for (int i = 1; i < M1; i++)
             {
-                Z2 = Z2 + 1 / C[i];
+                Z2 = Z2 + 1 / C[i]; 
             }
-            Z = Z1 + R1 + Z2;
+            Z = Z1 + R1 * Z2; //here
         }
     }
 }

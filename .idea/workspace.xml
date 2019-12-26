@@ -3,12 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="be9f3879-59b4-4202-9331-4ddb0d70fa37" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab6/vs/lab6/.vs/lab6/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6/vs/lab6/.vs/lab6/v15/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab6/vs/lab6/.vs/lab6/v15/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6/vs/lab6/.vs/lab6/v15/Server/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab6/vs/lab6/lab6/bin/Debug/lab6.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6/vs/lab6/lab6/bin/Debug/lab6.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab6/vs/lab6/lab6/bin/Debug/lab6.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6/vs/lab6/lab6/bin/Debug/lab6.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab6/vs/lab6/lab6/obj/Debug/lab6.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6/vs/lab6/lab6/obj/Debug/lab6.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab6/vs/lab6/lab6/obj/Debug/lab6.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab6/vs/lab6/lab6/obj/Debug/lab6.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab6/vs/lab6/lab6/FRMethod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab6/vs/lab6/lab6/FRMethod.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab7/vs/Lab7/Lab7/Box.cs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab7/vs/Lab7/Lab7/Box.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab7/vs/Lab7/Lab7/FAndM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab7/vs/Lab7/Lab7/FAndM.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/lab7/vs/Lab7/Lab7/Lab7.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/lab7/vs/Lab7/Lab7/Lab7.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OptimizationMethods/practice_1/Optim.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OptimizationMethods/practice_1/Optim.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab7/vs/Lab7/Lab7/Box.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab7/vs/Lab7/Lab7/Box.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab7/vs/Lab7/Lab7/Hooke-Jeeves.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab7/vs/Lab7/Lab7/Hooke-Jeeves.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practice_1/Optim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice_1/Optim.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +42,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FTP-Client/ftpclient" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Computational-complexity" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -58,20 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DFP">
-    <configuration name="CoordinateDescent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab5.CoordinateDescent" />
-      <module name="OptimizationMethods" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lab5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="DFP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab6.dfp.DFP" />
       <module name="OptimizationMethods" />
@@ -98,19 +89,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HookeJeeves (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab7.HookeJeeves" />
-      <module name="OptimizationMethods" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lab7.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HookeJeeves" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab5.HookeJeeves" />
       <module name="OptimizationMethods" />
@@ -120,6 +98,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="OptimizationMethods" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -162,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.DFP" />
         <item itemvalue="Application.SteepestDescent" />
         <item itemvalue="Application.TestClass" />
         <item itemvalue="Application.HookeJeeves" />
-        <item itemvalue="Application.CoordinateDescent" />
       </list>
     </recent_temporary>
   </component>

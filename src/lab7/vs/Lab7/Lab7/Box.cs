@@ -13,7 +13,7 @@ namespace Lab7
             FAndM fAnd = new FAndM();
             Hooke_Jeeves hj = new Hooke_Jeeves();
             Box b = new Box();
-            fAnd.search();
+            hj.search();
             Console.ReadKey();
         }
 
